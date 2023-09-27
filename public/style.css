@@ -1,0 +1,126 @@
+body {
+  background-color: rgb(12, 10, 27) !important;
+  font-family: "Courier New", Courier, monospace !important;
+  color: white !important;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  20% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  30% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  40% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  60% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  70% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  80% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  90% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  animation: slideRight 3s;
+  animation-delay: 1s;
+}
+
+header {
+  min-height: 90vh;
+}
+
+#circle {
+  position: absolute;
+  right: 25%;
+  top: 15%;
+  width: 100px;
+}
+
+#tria {
+  position: absolute;
+  width: 100px;
+  right: 5%;
+  bottom: 20%;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+  #circle,
+  #tria {
+    display: none;
+  }
+
+  .home-content .text h1 {
+    font-size: 2.5rem;
+    font-weight: 1000;
+  }
+
+  .featured-description h5 {
+    font-size: 18px;
+  }
+
+  #about {
+    padding: 50px 20px !important;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .navbar {
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+  }
+  #meImg {
+    display: block !important;
+  }
+  .home-content {
+    width: 40% !important;
+    left: 45% !important;
+    top: 40% !important;
+  }
+  .home-links {
+    margin-left: 0.5rem !important;
+  }
+  .button-1 {
+    margin-right: 1rem !important;
+  }
+
+  footer {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
