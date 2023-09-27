@@ -2,13 +2,21 @@
   <div id="experience" class="my-5">
     <h1>experience(self):</h1>
     <h4 class="mb-5">_what i have done?</h4>
-    <div class="d-flex flex-wrap ps-5 m-3">
+    <div class="d-flex flex-wrap ps-5">
       <div class="exp-box">
         <h4 class="title">BPOSeats</h4>
         <p class="sub-title">Full Stack Developer Intern</p>
         <p class="date">September 2023 - present</p>
         <ul>
           <li>Skills: Django · Vue.js · Python</li>
+        </ul>
+      </div>
+      <div class="exp-box">
+        <h4 class="title">Wrytopia</h4>
+        <p class="sub-title">Font-end Web Developer</p>
+        <p class="date">August 2023 - present</p>
+        <ul>
+          <li>Vue.js · CSS · Bootstrap</li>
         </ul>
       </div>
     </div>
@@ -32,6 +40,7 @@ p {
   color: gray;
 }
 .exp-box {
+  margin: 1rem;
   /* display: inline; */
 }
 </style>
