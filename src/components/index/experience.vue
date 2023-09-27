@@ -31,7 +31,7 @@ h4 {
   font-weight: 600;
 }
 p {
-  line-height: 5px;
+  line-height: 0.8;
 }
 .sub-title {
   font-weight: 600;
