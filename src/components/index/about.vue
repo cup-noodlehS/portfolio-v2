@@ -28,7 +28,7 @@
             ><img src="images/instagram.svg" alt="" class="pt-1"
           /></a>
         </div>
-        <h2>about</h2>
+        <h2>about.me</h2>
         <h5>what I love to do?</h5>
         <p>
           I am Sheldon, a computer science student in the University of the
@@ -37,10 +37,7 @@
           problem-solving to help develop innovative software solutions and
           enhance the user experience. I am also committed to continuing my
           professional growth and staying up-to-date with the latest industry
-          trends and technologies. <br /><br />As a student, I actively engage
-          in various programming projects and participate in coding
-          competitions, constantly seeking opportunities to refine my skills and
-          expand my horizons.
+          trends and technologies.
         </p>
       </div>
       <div class="about-pics col-12 col-lg-6">
@@ -59,7 +56,7 @@
 #about {
   padding: 100px 200px !important;
   width: 100% !important;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 #about h2 {
   font-weight: 600;

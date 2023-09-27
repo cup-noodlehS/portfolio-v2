@@ -1,7 +1,7 @@
 <template>
   <div class="py-5" id="projects">
     <div class="container">
-      <h1>_noteworthy projects</h1>
+      <h1>noteworthy_projects.all()</h1>
       <div class="d-flex flex-wrap proj-container justify-content-center">
         <div class="project-box">
           <div class="d-flex justify-content-end mb-3">

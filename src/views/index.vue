@@ -7,6 +7,8 @@
     <hr />
     <Projects />
     <hr />
+    <Experience />
+    <hr />
     <About />
   </main>
 </template>
@@ -15,6 +17,7 @@ import Cover from "../components/index/cover.vue";
 import Features from "../components/index/features.vue";
 import Projects from "../components/index/projects.vue";
 import About from "../components/index/about.vue";
+import Experience from "../components/index/experience.vue";
 
 export default {
   components: {
@@ -22,6 +25,7 @@ export default {
     Features,
     Projects,
     About,
+    Experience,
   },
 };
 </script>

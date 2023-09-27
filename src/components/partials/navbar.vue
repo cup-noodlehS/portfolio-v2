@@ -19,7 +19,7 @@
       >
         <div class="navbar-nav">
           <a class="nav-link" href="#featured">projects</a>
-          <a class="nav-link" href="#">experiences</a>
+          <a class="nav-link" href="#experience">experiences</a>
           <a class="nav-link" href="#about">about</a>
           <a class="nav-link" href="images/resume.pdf" target="_blank"
             >resume</a
