@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5" id="projects">
+  <div class="py-5 overflow-x-hidden" id="projects">
     <div class="container">
       <h1>noteworthy_projects.all()</h1>
       <div class="d-flex flex-wrap proj-container justify-content-center">

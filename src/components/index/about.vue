@@ -1,8 +1,8 @@
 <template>
-  <div class="d-flex p-5" id="about">
+  <div class="d-flex container-fluid my-5" id="about">
     <div class="row justify-content-center">
       <div class="about-content col-12 col-lg-6">
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-end mb-3">
           <a
             href="https://github.com/cup-noodlehS"
             target="_blank"
@@ -54,7 +54,7 @@
 
 <style scoped>
 #about {
-  padding: 100px 200px !important;
+  /* padding: 100px 200px !important; */
   width: 100% !important;
   /* min-height: 100vh; */
 }
@@ -66,6 +66,7 @@
 }
 
 .about-content {
+  width: 30%;
   background-color: rgb(43, 48, 53);
   padding: 1rem;
   border-radius: 25px;
@@ -81,7 +82,7 @@
 }
 
 .about-pics img {
-  width: 45%;
+  width: 40%;
   border-radius: 10px;
   margin: 0.5rem;
 }
@@ -97,5 +98,11 @@
 .home-links:hover {
   transform: translate(-5px, -5px);
   box-shadow: 7px 7px 0 rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    width: 100%;
+  }
 }
 </style>
