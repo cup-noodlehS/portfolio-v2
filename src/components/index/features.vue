@@ -4,7 +4,7 @@
     <hr />
     <div class="mt-5 container">
       <div class="featured-section mb-5">
-        <div class="row mb-5">
+        <div class="row my-5">
           <img
             src="images/campgo.png"
             class="featured-img col-12 col-lg-6"
@@ -56,7 +56,7 @@
           </div>
         </div>
       </div>
-      <div class="featured-section mb-5">
+      <div class="featured-section my-5">
         <div class="row mb-5 flex-wrap-reverse">
           <div class="featured-description col-12 col-lg-6">
             <h1>Wrytopia</h1>
@@ -99,7 +99,7 @@
           />
         </div>
       </div>
-      <div class="featured-section mb-5">
+      <div class="featured-section my-5">
         <div class="row mb-5">
           <img
             src="images/cmscblog.png"
@@ -193,7 +193,7 @@ h4 {
 }
 
 .featured-section {
-  margin-bottom: 80px !important;
+  margin-bottom: 120px !important;
 }
 
 .home-links {

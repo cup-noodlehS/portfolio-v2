@@ -2,49 +2,47 @@
   <div id="experience" class="my-5">
     <h1>experience(self):</h1>
     <h4 class="mb-5">_what i have done?</h4>
-    <div class="d-flex justify-content-center ps-5">
-      <div class="d-flex flex-column">
-        <div class="exp-box">
-          <h4 class="title">BPOSeats</h4>
-          <ul>
-            <li>
-              <p class="sub-title">Part-time Full Stack Developer</p>
-              <div class="d-flex m-1">
-                <div class="vr me-3"></div>
-                <div>
-                  <p class="date">October 2023 - Present</p>
-                  <ul>
-                    <li>Skills: Django · Vue.js · Python</li>
-                  </ul>
-                </div>
+    <div class="d-flex flex-wrap">
+      <div class="exp-box">
+        <h4 class="title">BPOSeats</h4>
+        <ul>
+          <li>
+            <p class="sub-title">Part-time Full Stack Developer</p>
+            <div class="d-flex m-1">
+              <div class="vr me-3"></div>
+              <div>
+                <p class="date">October 2023 - Present</p>
+                <ul>
+                  <li>Skills: Django · Vue.js · Python</li>
+                </ul>
               </div>
-            </li>
-            <li>
-              <p class="sub-title">Full Stack Developer Intern</p>
-              <div class="d-flex m-1">
-                <div class="vr me-3"></div>
-                <div>
-                  <p class="date">September 2023</p>
-                  <ul>
-                    <li>Skills: Django · Vue.js · Python</li>
-                  </ul>
-                </div>
+            </div>
+          </li>
+          <li>
+            <p class="sub-title">Full Stack Developer Intern</p>
+            <div class="d-flex m-1">
+              <div class="vr me-3"></div>
+              <div>
+                <p class="date">September 2023</p>
+                <ul>
+                  <li>Skills: Django · Vue.js · Python</li>
+                </ul>
               </div>
-            </li>
-          </ul>
-        </div>
-        <div class="exp-box">
-          <h4 class="title">Wrytopia</h4>
-          <ul>
-            <li>
-              <p class="sub-title">Font-end Web Developer</p>
-              <p class="date">August 2023 - present</p>
-              <ul>
-                <li>Vue.js · CSS · Bootstrap</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="exp-box">
+        <h4 class="title">Wrytopia</h4>
+        <ul>
+          <li>
+            <p class="sub-title">Font-end Web Developer</p>
+            <p class="date">August 2023 - present</p>
+            <ul>
+              <li>Vue.js · CSS · Bootstrap</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
