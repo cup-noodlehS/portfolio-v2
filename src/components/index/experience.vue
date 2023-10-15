@@ -39,7 +39,7 @@
             <p class="sub-title">Font-end Web Developer</p>
             <p class="date">August 2023 - present</p>
             <ul>
-              <li>Vue.js · CSS · Bootstrap</li>
+              <li>Vue.js · SASS · Bootstrap</li>
             </ul>
           </li>
         </ul>
