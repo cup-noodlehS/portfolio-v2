@@ -5,9 +5,9 @@
   <main class="container">
     <Features />
     <hr />
-    <Projects />
-    <hr />
     <Experience />
+    <hr />
+    <Projects />
     <hr />
     <About />
   </main>

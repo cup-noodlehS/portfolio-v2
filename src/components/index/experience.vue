@@ -37,9 +37,21 @@
         <ul>
           <li>
             <p class="sub-title">Font-end Web Developer</p>
-            <p class="date">August 2023 - present</p>
+            <p class="date">August 2023 - Febuary 2024</p>
             <ul>
               <li>Vue.js · SASS · Bootstrap</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="exp-box">
+        <h4 class="title">Beacon</h4>
+        <ul>
+          <li>
+            <p class="sub-title">Fullstack Web Developer and Founder</p>
+            <p class="date">Febuary 2024 - Present</p>
+            <ul>
+              <li>Next.js · Tailwind · Django</li>
             </ul>
           </li>
         </ul>
