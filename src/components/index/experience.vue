@@ -36,7 +36,7 @@
         <h4 class="title">Wrytopia</h4>
         <ul>
           <li>
-            <p class="sub-title">Font-end Web Developer</p>
+            <p class="sub-title">Lead Web Developer</p>
             <p class="date">August 2023 - Febuary 2024</p>
             <ul>
               <li>Vue.js · SASS · Bootstrap</li>
@@ -48,8 +48,8 @@
         <h4 class="title">Beacon</h4>
         <ul>
           <li>
-            <p class="sub-title">Fullstack Web Developer and Founder</p>
-            <p class="date">Febuary 2024 - Present</p>
+            <p class="sub-title">Fullstack Web Developer</p>
+            <p class="date">Febuary 2024 - March 2024</p>
             <ul>
               <li>Next.js · Tailwind · Django</li>
             </ul>
