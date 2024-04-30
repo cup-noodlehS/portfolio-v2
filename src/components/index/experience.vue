@@ -7,7 +7,7 @@
         <h4 class="title">BPOSeats</h4>
         <ul>
           <li>
-            <p class="sub-title">Part-time Full Stack Developer</p>
+            <p class="sub-title">Full Stack Developer</p>
             <div class="d-flex m-1">
               <div class="vr me-3"></div>
               <div>
