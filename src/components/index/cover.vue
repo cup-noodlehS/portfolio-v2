@@ -1,7 +1,7 @@
 <template>
-<div id="home" class="row justify-content-center align-items-center">
-    <div class="col-6 align-self-start">
-        <img src="images/me.png" alt="" id="meImg" class=""/>
+<div id="home" class="home row justify-content-center align-items-center">
+    <div class="col-6">
+        <img src="images/sheldongwapo.png" alt="" id="meImg" class=""/>
     </div>  
     <div class="home-content col-12 col-md-6 mt-5">
         <div class="text">
@@ -39,8 +39,12 @@
 </template>
 <style scoped>
 
+.home {
+    min-height: 100lvh;
+}
+
 #meImg {
- width:80%;
+ width:100%;
 }
 
 h1 {

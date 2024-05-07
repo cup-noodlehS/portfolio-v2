@@ -1,5 +1,5 @@
 <template>
-  <header class="container">
+  <header class="container d-flex flex-col justify-content-center">
     <Cover />
   </header>
   <main class="container">

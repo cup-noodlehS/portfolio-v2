@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <Navbar />
+    <Navbar class="fixed-top" />
     <router-view></router-view>
     <Footer />
   </div>
