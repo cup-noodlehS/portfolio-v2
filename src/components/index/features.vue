@@ -3,8 +3,8 @@
     <h1 class="">_featuredProjects</h1>
     <hr />
     <div class="mt-5 container">
-      <div class="featured-section mb-5">
-        <div class="row my-5">
+      <div class="featured-section">
+        <div class="row">
           <img
             src="images/campgo.png"
             class="featured-img col-12 col-lg-6"
@@ -56,7 +56,8 @@
           </div>
         </div>
       </div>
-      <div class="featured-section my-5">
+
+      <div class="featured-section">
         <div class="row mb-5 flex-wrap-reverse">
           <div class="featured-description col-12 col-lg-6">
             <h1>Wrytopia</h1>
@@ -142,6 +143,13 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex align-items-center gap-3 fs-5 justify-content-center">
+        View more on my
+        <a href="https://github.com/cup-noodlehS" class="d-flex align-items-center gap-2 text-decoration-none text-white fs-4 bg-secondary px-3 py-1 rounded-2  ">
+          <img src="images/github.svg" />
+          github
+        </a>
       </div>
     </div>
   </div>

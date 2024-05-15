@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-transparent py-4">
+  <nav class="navbar navbar-expand-lg py-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">@sheldonsagrado</a>
       <button
@@ -31,6 +31,9 @@
 </template>
 
 <style scoped>
+.navbar {
+  background-color: rgb(12, 10, 27);
+}
 .nav-link,
 .navbar-brand {
   color: white !important;

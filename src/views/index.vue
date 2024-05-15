@@ -7,7 +7,9 @@
     <hr />
     <Experience />
     <hr />
-    <Projects />
+    <TechStack />
+    <!-- <hr />
+    <Projects /> -->
     <hr />
     <About />
   </main>
@@ -18,6 +20,7 @@ import Features from "../components/index/features.vue";
 import Projects from "../components/index/projects.vue";
 import About from "../components/index/about.vue";
 import Experience from "../components/index/experience.vue";
+import TechStack from "@/components/index/TechStack.vue";
 
 export default {
   components: {
@@ -26,6 +29,7 @@ export default {
     Projects,
     About,
     Experience,
+    TechStack
   },
 };
 </script>
