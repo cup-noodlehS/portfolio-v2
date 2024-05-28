@@ -1,7 +1,7 @@
 <template>
 <div id="home" class="home row justify-content-center align-items-center">
     <div class="col-6">
-        <img src="images/sheldongwapo.png" alt="" id="meImg" class=""/>
+        <img src="images/gwapo.png" alt="" id="meImg" class=""/>
     </div>  
     <div class="home-content col-12 col-md-6 mt-5">
         <div class="text">
