@@ -1,6 +1,6 @@
 <template>
   <div id="featured" class="my-5 container">
-    <h1 class="">_featuredProjects {{ screenWidth }}</h1>
+    <h1 class="">_featuredProjects</h1>
     <hr />
     <div class="mt-5 container">
       <div
