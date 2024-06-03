@@ -212,6 +212,7 @@
     </div>
   </div>
 </template>
+
 <style scoped>
 #projects h1 {
   font-weight: 1000;
