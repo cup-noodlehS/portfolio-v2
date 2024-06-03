@@ -112,6 +112,25 @@ export default {
           github: "https://github.com/maxellmilay/finite-automata-visualizer",
         },
         {
+          imgUrl: "images/beacon.png",
+          title: "Beacon",
+          subtitle: "AI Career Guidance Website",
+          description:
+            "an ingenious career guidance application. Seamlessly integrating AI algorithms with user feedback, Beacon crafts tailor-made career roadmaps, empowering individuals to navigate their professional trajectories with confidence and clarity.",
+          skills: [
+            "Under Development",
+            "OpenAI API",
+            "D3.js",
+            "Next.js/React.js",
+            "Django",
+            "Firebase",
+            "TailwindCSS",
+            "SCSS",
+          ],
+          link: "",
+          github: "",
+        },
+        {
           imgUrl: "images/cmscblog.png",
           title: "CMSC-21 Blog",
           subtitle: "Blog about our CMSC-21 course in UP Cebu",
