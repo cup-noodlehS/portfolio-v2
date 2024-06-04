@@ -44,7 +44,8 @@
 }
 
 #meImg {
- width:100%;
+ max-height: calc(100vh - 100px);
+ transform: translate(0, 50px);
 }
 
 h1 {
