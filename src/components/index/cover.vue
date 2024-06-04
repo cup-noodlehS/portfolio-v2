@@ -1,6 +1,6 @@
 <template>
 <div id="home" class="home row justify-content-center align-items-center">
-    <div class="col-6">
+    <div class="col-6 align-self-end">
         <img src="images/gwapo.png" alt="" id="meImg" class=""/>
     </div>  
     <div class="home-content col-12 col-md-6 mt-5">
@@ -45,7 +45,6 @@
 
 #meImg {
  max-height: calc(100vh - 100px);
- transform: translate(0, 50px);
 }
 
 h1 {
