@@ -18,9 +18,9 @@
           <div class="featured-description col-12 col-lg-6">
             <h1>{{ project.title }}</h1>
             <h4>{{ project.subtitle }}</h4>
-            <h5>
+            <span class="project-description">
               {{ project.description }}
-            </h5>
+            </span>
             <div class="mb-3">
               <div v-for="skill in project.skills" key="skill" class="badge1">
                 <div>{{ skill }}</div>
@@ -117,7 +117,7 @@ export default {
           title: "CampGo",
           subtitle: "Campground Website",
           description:
-            "Its core functionality revolves around offering users an immersive experience, granting them access to a curated collection of campgrounds situated in diverse locations, each accompanied by comprehensive details",
+            "Its core functionality revolves around offering users an immersive experience, granting them access to a curated collection of campgrounds situated in diverse locations, each accompanied by comprehensive details \n\n (Note: this is not available as of the moment because cyclic.sh is down)",
           skills: [
             "EJS",
             "Node.js",
@@ -226,5 +226,10 @@ h4 {
 .home-links:hover {
   transform: translate(-5px, -5px);
   box-shadow: 7px 7px 0 rgb(255, 255, 255);
+}
+
+.project-description {
+  white-space: pre-line;
+  font-size: 1.1rem;
 }
 </style>
