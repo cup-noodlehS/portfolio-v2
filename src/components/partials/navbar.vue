@@ -39,6 +39,10 @@
   color: white !important;
 }
 
+.navbar-toggler {
+  background-color: rgb(241, 241, 120);
+}
+
 .nav-link {
   font-size: 1.1rem;
   margin-right: 1rem;
