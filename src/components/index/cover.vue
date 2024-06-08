@@ -1,9 +1,9 @@
 <template>
 <div id="home" class="home row justify-content-center align-items-center">
-    <div class="col-6 align-self-end">
+    <div class="col-6 align-self-end d-none d-md-block">
         <img src="images/gwapo.png" alt="" id="meImg" class=""/>
     </div>  
-    <div class="home-content col-12 col-md-6 mt-5">
+    <div class="home-content col-12 col-md-6">
         <div class="text">
             <h4 class="mb-3">Hello, they call me "Don";</h4>
             <h1>
