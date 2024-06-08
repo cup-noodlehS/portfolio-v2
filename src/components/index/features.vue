@@ -67,24 +67,6 @@ export default {
       screenWidth: 0,
       projects: [
         {
-          imgUrl: "images/campgo.png",
-          title: "CampGo",
-          subtitle: "Campground Website",
-          description:
-            "Its core functionality revolves around offering users an immersive experience, granting them access to a curated collection of campgrounds situated in diverse locations, each accompanied by comprehensive details",
-          skills: [
-            "EJS",
-            "Node.js",
-            "Express.js",
-            "MongoDB",
-            "Mapbox",
-            "Cloudinary",
-            "BootstrapCSS",
-          ],
-          link: "https://vast-rose-drill-boot.cyclic.app/",
-          github: "https://github.com/cup-noodlehS/CampGo.git",
-        },
-        {
           imgUrl: "images/wrytopia.png",
           title: "wrytopia",
           subtitle: "Business Website",
@@ -118,7 +100,7 @@ export default {
           description:
             "an ingenious career guidance application. Seamlessly integrating AI algorithms with user feedback, Beacon crafts tailor-made career roadmaps, empowering individuals to navigate their professional trajectories with confidence and clarity.",
           skills: [
-            "Under Development",
+            "Coming soon",
             "OpenAI API",
             "D3.js",
             "Next.js/React.js",
@@ -127,8 +109,26 @@ export default {
             "TailwindCSS",
             "SCSS",
           ],
-          link: "",
-          github: "",
+          link: "https://github.com/maxellmilay/beacon/",
+          github: "https://github.com/maxellmilay/beacon/",
+        },
+        {
+          imgUrl: "images/campgo.png",
+          title: "CampGo",
+          subtitle: "Campground Website",
+          description:
+            "Its core functionality revolves around offering users an immersive experience, granting them access to a curated collection of campgrounds situated in diverse locations, each accompanied by comprehensive details",
+          skills: [
+            "EJS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Mapbox",
+            "Cloudinary",
+            "BootstrapCSS",
+          ],
+          link: "https://vast-rose-drill-boot.cyclic.app/",
+          github: "https://github.com/cup-noodlehS/CampGo.git",
         },
         {
           imgUrl: "images/cmscblog.png",
