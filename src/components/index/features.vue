@@ -96,7 +96,7 @@ export default {
           title: "Beacon",
           subtitle: "AI Career Guidance Website",
           description:
-            "an ingenious career guidance application. Seamlessly integrating AI algorithms with user feedback, Beacon crafts tailor-made career roadmaps, empowering individuals to navigate their professional trajectories with confidence and clarity.",
+            "A ingenious career guidance application. Seamlessly integrating AI algorithms with user feedback, Beacon crafts tailor-made career roadmaps, empowering individuals to navigate their professional trajectories with confidence and clarity.",
           skills: [
             "OpenAI API",
             "D3.js",
