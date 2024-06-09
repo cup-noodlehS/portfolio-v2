@@ -1,6 +1,8 @@
 <template>
-  <header class="container d-flex flex-col justify-content-center">
-    <Cover />
+  <header class="header">
+    <div class="container d-flex flex-col justify-content-center">
+      <Cover />
+    </div>
   </header>
   <main class="container">
     <Features />
@@ -29,7 +31,7 @@ export default {
     Projects,
     About,
     Experience,
-    TechStack
+    TechStack,
   },
 };
 </script>

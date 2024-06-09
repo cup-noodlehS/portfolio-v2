@@ -83,7 +83,8 @@ onMounted(() => {
 #meImg {
   max-height: calc(100vh - 100px);
   border-radius: 38% 62% 61% 39% / 28% 43% 57% 72%;
-  border: solid 3px rgb(241, 241, 120);
+  border: solid 3px #f1f178;
+  box-shadow: 0 0 20px 5px #f1f178;
 }
 
 h5 {
@@ -98,9 +99,9 @@ h5 {
   color: rgb(241, 241, 120);
 }
 
-#meImg:hover {
+/* #meImg:hover {
   animation: shake 1s;
-}
+} */
 
 .home-links {
   border-radius: 50% !important;
