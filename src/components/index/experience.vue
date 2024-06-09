@@ -3,62 +3,73 @@
     <h1>experience(self):</h1>
     <h4 class="mb-5">_what i have done?</h4>
     <div class="d-flex flex-wrap">
-      <div class="exp-box">
-        <h4 class="title">BPOSeats</h4>
+      <div v-for="(company, index) in experience" :key="index" class="exp-box">
+        <a :href="company.link" target="_blank" class="text-decoration-none">
+          <h4 class="title">{{ company.company }}</h4>
+        </a>
         <ul>
-          <li>
-            <p class="sub-title">Full Stack Developer</p>
+          <li v-for="position in company.positions" :key="position.title">
+            <p class="sub-title">{{ position.title }}</p>
             <div class="d-flex m-1">
               <div class="vr me-3"></div>
               <div>
-                <p class="date">October 2023 - Present</p>
-                <ul>
-                  <li>Skills: Django · Vue.js · Python</li>
-                </ul>
+                <p class="date">{{ position.date }}</p>
+                <p class="skills">
+                  <span v-for="(skill, index) in position.skills" :key="skill">
+                    {{ skill }}
+                    <span v-if="index < position.skills.length - 1">· </span>
+                  </span>
+                </p>
               </div>
             </div>
-          </li>
-          <li>
-            <p class="sub-title">Full Stack Developer Intern</p>
-            <div class="d-flex m-1">
-              <div class="vr me-3"></div>
-              <div>
-                <p class="date">September 2023</p>
-                <ul>
-                  <li>Skills: Django · Vue.js · Python</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="exp-box">
-        <h4 class="title">Wrytopia</h4>
-        <ul>
-          <li>
-            <p class="sub-title">Lead Web Developer</p>
-            <p class="date">August 2023 - Febuary 2024</p>
-            <ul>
-              <li>Vue.js · SASS · Bootstrap</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="exp-box">
-        <h4 class="title">Beacon</h4>
-        <ul>
-          <li>
-            <p class="sub-title">Fullstack Web Developer</p>
-            <p class="date">Febuary 2024 - March 2024</p>
-            <ul>
-              <li>Next.js · Tailwind · Django</li>
-            </ul>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+<script setup>
+const experience = [
+  {
+    company: "BPOSeats",
+    link: "https://www.linkedin.com/company/bposeats/mycompany/",
+    positions: [
+      {
+        title: "Full Stack Developer",
+        date: "October 2023 - Present",
+        skills: ["Django", "Vue.js", "Python"],
+      },
+      {
+        title: "Full Stack Developer Intern",
+        date: "September 2023",
+        skills: ["Django", "Vue.js", "Python", "PostgreSQL", "SCSS"],
+      },
+    ],
+  },
+  {
+    company: "Wrytopia",
+    link: "https://www.linkedin.com/company/wrytopiaonline/",
+    positions: [
+      {
+        title: "Lead Web Developer",
+        date: "August 2023 - Febuary 2024",
+        skills: ["Vue.js", "SCSS", "Bootstrap", "Lottie"],
+      },
+    ],
+  },
+  {
+    company: "Innovustech",
+    link: "https://github.com/innovustech/",
+    positions: [
+      {
+        title: "Fullstack Web Developer",
+        date: "Febuary 2024 - Present",
+        skills: ["Next.js", "Django", "Tailwind", "Zustand", "Figma"],
+      },
+    ],
+  },
+];
+</script>
 <style scoped>
 h1 {
   font-weight: 1000;
@@ -79,6 +90,9 @@ p {
 }
 .exp-box {
   margin: 1rem;
-  /* display: inline; */
+  max-width: 400px;
+}
+.skills {
+  line-height: 1.5;
 }
 </style>

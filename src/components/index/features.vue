@@ -28,7 +28,7 @@
                 <div>{{ skill }}</div>
               </div>
             </div>
-            <div class="d-flex justify-content-start">
+            <div class="d-flex gap-2 justify-content-start">
               <a :href="project.link" target="_blank"
                 ><Button class="button-1">take a look</Button></a
               >
