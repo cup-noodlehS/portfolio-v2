@@ -12,7 +12,7 @@
             </h1>
         </div>
         <div class="links mt-5 d-flex flex-wrap justify-content-start">
-            <a href="#featured"><button class="button-1 mb-3">projects</button></a>
+            <Button class="button-1">Projects</Button>
             <div>
                 <a
                 href="https://github.com/cup-noodlehS"
@@ -37,6 +37,11 @@
     </div>
 </div>
 </template>
+
+<script setup>
+import Button from '@/components/index/Button.vue';
+</script>
+
 <style scoped>
 
 .home {
@@ -57,23 +62,6 @@ h1 {
 
 #meImg:hover {
   animation: shake 1s;
-}
-
-.button-1 {
-  color: rgb(12, 10, 27);
-  font-weight: 1000 !important;
-  padding: 0.8rem 1.2rem;
-  background-color: rgb(241, 241, 120);
-  border-radius: 5px;
-  border: none;
-  box-shadow: 3px 3px 0 rgb(255, 255, 255);
-  transition: all 0.2s ease;
-}
-
-.button-1:hover {
-  transform: translate(-5px, -5px);
-  box-shadow: 8px 8px 0 rgb(255, 255, 255);
-  filter: brightness(120%);
 }
 
 .home-links {
