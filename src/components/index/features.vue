@@ -13,7 +13,9 @@
             v-if="index % 2 == 0 || screenWidth <= 992"
             class="img-cont col-12 col-lg-6"
           >
-            <img :src="project.imgUrl" class="featured-img" alt="" />
+            <a :href="project.link" target="_blank">
+              <img :src="project.imgUrl" class="featured-img" alt="" />
+            </a>
           </div>
           <div class="featured-description col-12 col-lg-6">
             <h1>{{ project.title }}</h1>
@@ -67,16 +69,6 @@ export default {
       screenWidth: 0,
       projects: [
         {
-          imgUrl: "images/wrytopia.png",
-          title: "wrytopia",
-          subtitle: "Business Website",
-          description:
-            "Wrytopia is a reliable third-party agent committed to assisting global English writers by providing high-quality writing services that pave the way for your writing carer.",
-          skills: ["Vue.js", "BootstrapCSS", "SCSS", "Lottie"],
-          link: "https://wrytopia.vercel.app/",
-          github: "https://github.com/cup-noodlehS/CampGo.git",
-        },
-        {
           imgUrl: "images/dfa.png",
           title: "FaVisualizer",
           subtitle: "Finite Automata Website",
@@ -100,7 +92,6 @@ export default {
           description:
             "an ingenious career guidance application. Seamlessly integrating AI algorithms with user feedback, Beacon crafts tailor-made career roadmaps, empowering individuals to navigate their professional trajectories with confidence and clarity.",
           skills: [
-            "Coming soon",
             "OpenAI API",
             "D3.js",
             "Next.js/React.js",
@@ -109,8 +100,18 @@ export default {
             "TailwindCSS",
             "SCSS",
           ],
-          link: "https://github.com/maxellmilay/beacon/",
+          link: "https://beaconph.site",
           github: "https://github.com/maxellmilay/beacon/",
+        },
+        {
+          imgUrl: "images/wrytopia.png",
+          title: "wrytopia",
+          subtitle: "Business Website",
+          description:
+            "Wrytopia is a reliable third-party agent committed to assisting global English writers by providing high-quality writing services that pave the way for your writing carer.",
+          skills: ["Vue.js", "BootstrapCSS", "SCSS", "Lottie"],
+          link: "https://wrytopia.vercel.app/",
+          github: "https://github.com/cup-noodlehS/CampGo.git",
         },
         {
           imgUrl: "images/campgo.png",

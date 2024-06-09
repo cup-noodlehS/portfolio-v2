@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="home row justify-content-center align-items-center">
-    <div class="col-6 align-self-end d-none d-lg-block">
+    <div class="col-6 d-none d-lg-block">
       <img ref="meImg" src="images/gwapo.png" alt="" id="meImg" class="" />
     </div>
     <div class="home-content col-12 col-lg-6">
@@ -53,9 +53,9 @@ const animateRadius = async () => {
           direction.value[i] = !direction.value[i];
         }
         if (direction.value[i]) {
-          meImgRadius.value[i] += 2;
+          meImgRadius.value[i]++;
         } else {
-          meImgRadius.value[i] -= 2;
+          meImgRadius.value[i]--;
         }
       }
 
