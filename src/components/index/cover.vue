@@ -1,9 +1,9 @@
 <template>
   <div id="home" class="home row justify-content-center align-items-center">
-    <div class="col-6 align-self-end d-none d-md-block">
-      <img src="images/gwapo.png" alt="" id="meImg" class="" />
+    <div class="col-6 align-self-end d-none d-lg-block">
+      <img ref="meImg" src="images/gwapo.png" alt="" id="meImg" class="" />
     </div>
-    <div class="home-content col-12 col-md-6">
+    <div class="home-content col-12 col-lg-6">
       <div class="text">
         <h4 class="mb-3">Hello, they call me "Don";</h4>
         <h5>
@@ -36,7 +36,43 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from "vue";
 import Button from "@/components/index/Button.vue";
+
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const meImg = ref(null);
+const meImgRadius = ref([38, 62, 61, 39, 28, 43, 57, 72]);
+const direction = ref([true, true, true, true, true, true, true, true]);
+
+const animateRadius = async () => {
+  try {
+    while (window.innerWidth >= 992) {
+      for (let i = 0; i < meImgRadius.value.length; i++) {
+        if (meImgRadius.value[i] >= 100 || meImgRadius.value[i] <= 20) {
+          direction.value[i] = !direction.value[i];
+        }
+        if (direction.value[i]) {
+          meImgRadius.value[i] += 2;
+        } else {
+          meImgRadius.value[i] -= 2;
+        }
+      }
+
+      const [r1, r2, r3, r4, r5, r6, r7, r8] = meImgRadius.value;
+      console.log(`${r1}% ${r2}% ${r3}% ${r4}% / ${r5}% ${r6}% ${r7}% ${r8}%`);
+      meImg.value.style.borderRadius = `${r1}% ${r2}% ${r3}% ${r4}% / ${r5}% ${r6}% ${r7}% ${r8}%`;
+
+      await wait(100);
+    }
+  } catch (error) {
+    console.error("Error in animation:", error);
+  }
+};
+
+onMounted(() => {
+  animateRadius();
+});
 </script>
 
 <style scoped>
@@ -46,6 +82,8 @@ import Button from "@/components/index/Button.vue";
 
 #meImg {
   max-height: calc(100vh - 100px);
+  border-radius: 38% 62% 61% 39% / 28% 43% 57% 72%;
+  border: solid 3px rgb(241, 241, 120);
 }
 
 h5 {
