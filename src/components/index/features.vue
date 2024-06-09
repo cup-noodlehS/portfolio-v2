@@ -23,21 +23,20 @@
             <span class="project-description">
               {{ project.description }}
             </span>
-            <div class="mb-3">
+            <div class="my-3">
               <div v-for="skill in project.skills" key="skill" class="badge1">
                 <div>{{ skill }}</div>
               </div>
             </div>
             <div class="d-flex justify-content-start">
               <a :href="project.link" target="_blank"
-                ><button class="view me-2">take a look</button></a
+                ><Button class="button-1">take a look</Button></a
               >
-              <a
-                :href="project.github"
-                target="_blank"
-                class="home-links btn btn-dark mx-2"
-                ><img src="images/github.svg" alt="" class="pt-1"
-              /></a>
+              <a :href="project.github" target="_blank" class="">
+                <Button class="button-2"
+                  ><img src="images/github.svg" alt="" class="pt-1"
+                /></Button>
+              </a>
             </div>
           </div>
           <div
@@ -63,7 +62,12 @@
   </div>
 </template>
 <script>
+import Button from "./Button.vue";
+
 export default {
+  components: {
+    Button,
+  },
   data() {
     return {
       screenWidth: 0,
@@ -83,7 +87,7 @@ export default {
             "ReactFlow",
           ],
           link: "https://favisualizer.vercel.app/",
-          github: "https://github.com/maxellmilay/finite-automata-visualizer",
+          github: "https://github.com/innovustech/finite-automata-visualizer",
         },
         {
           imgUrl: "images/beacon.png",
@@ -101,7 +105,7 @@ export default {
             "SCSS",
           ],
           link: "https://beaconph.site",
-          github: "https://github.com/maxellmilay/beacon/",
+          github: "https://github.com/innovustech/beacon",
         },
         {
           imgUrl: "images/wrytopia.png",
