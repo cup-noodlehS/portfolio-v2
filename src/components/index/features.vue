@@ -43,7 +43,9 @@
             v-if="index % 2 != 0 && screenWidth > 992"
             class="img-cont col-12 col-lg-6"
           >
-            <img :src="project.imgUrl" class="featured-img" alt="" />
+            <a :href="project.link" target="_blank">
+              <img :src="project.imgUrl" class="featured-img" alt="" />
+            </a>
           </div>
         </div>
       </div>
