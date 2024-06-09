@@ -120,6 +120,26 @@ export default {
           github: "https://github.com/cup-noodlehS/CampGo.git",
         },
         {
+          imgUrl: "images/gallery.png",
+          title: "FA Gallery",
+          subtitle: "An Art Auction Website",
+          description:
+            "A website that allows users to view and bid on art pieces. It also allows artists to upload their art pieces for auction.",
+          skills: [
+            "Coming Soon",
+            "Django",
+            "DRF",
+            "Next.js",
+            "TailwindCSS",
+            "SCSS",
+            "PostgreSQL",
+            "Cloudinary",
+            "Redis",
+          ],
+          link: "https://github.com/cup-noodlehS/art-gallery-api",
+          github: "https://github.com/cup-noodlehS/art-gallery-api",
+        },
+        {
           imgUrl: "images/campgo.png",
           title: "CampGo",
           subtitle: "Campground Website",
