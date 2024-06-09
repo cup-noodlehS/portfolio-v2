@@ -28,5 +28,20 @@ button {
       filter: brightness(120%);
     }
   }
+
+  &.button-2 {
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #212529;
+    border: none;
+    box-shadow: -2px 2px 0 rgb(255, 255, 255);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translate(5px, -5px);
+      box-shadow: -7px 7px 0 rgb(255, 255, 255);
+    }
+  }
 }
 </style>
