@@ -121,12 +121,11 @@ export default {
         },
         {
           imgUrl: "images/gallery.png",
-          title: "FA Gallery (Under Development)",
+          title: "Moonine Gallery",
           subtitle: "An Art Auction Website",
           description:
             "A website that allows users to view and bid on art pieces. It also allows artists to upload their art pieces for auction.",
           skills: [
-            "Coming Soon",
             "Django",
             "DRF",
             "Next.js",
@@ -136,7 +135,7 @@ export default {
             "Cloudinary",
             "Redis",
           ],
-          link: "https://github.com/cup-noodlehS/art-gallery-api",
+          link: "https://moonine.vercel.app/",
           github: "https://github.com/cup-noodlehS/art-gallery-api",
         },
         {
