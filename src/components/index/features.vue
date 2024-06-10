@@ -121,7 +121,7 @@ export default {
         },
         {
           imgUrl: "images/gallery.png",
-          title: "FA Gallery",
+          title: "FA Gallery (Under Development)",
           subtitle: "An Art Auction Website",
           description:
             "A website that allows users to view and bid on art pieces. It also allows artists to upload their art pieces for auction.",
