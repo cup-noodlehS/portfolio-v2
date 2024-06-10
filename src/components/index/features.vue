@@ -75,6 +75,25 @@ export default {
       screenWidth: 0,
       projects: [
         {
+          imgUrl: "images/gallery.png",
+          title: "Moonine Gallery",
+          subtitle: "An Art Auction Website",
+          description:
+            "A website that allows users to view and bid on art pieces. It also allows artists to upload their art pieces for auction.",
+          skills: [
+            "Django",
+            "DRF",
+            "Next.js",
+            "TailwindCSS",
+            "SCSS",
+            "PostgreSQL",
+            "Cloudinary",
+            "Redis",
+          ],
+          link: "https://moonine.vercel.app/",
+          github: "https://github.com/cup-noodlehS/art-gallery-api",
+        },
+        {
           imgUrl: "images/dfa.png",
           title: "FaVisualizer",
           subtitle: "Finite Automata Website",
@@ -118,25 +137,6 @@ export default {
           skills: ["Vue.js", "BootstrapCSS", "SCSS", "Lottie"],
           link: "https://wrytopia.vercel.app/",
           github: "https://github.com/cup-noodlehS/CampGo.git",
-        },
-        {
-          imgUrl: "images/gallery.png",
-          title: "Moonine Gallery",
-          subtitle: "An Art Auction Website",
-          description:
-            "A website that allows users to view and bid on art pieces. It also allows artists to upload their art pieces for auction.",
-          skills: [
-            "Django",
-            "DRF",
-            "Next.js",
-            "TailwindCSS",
-            "SCSS",
-            "PostgreSQL",
-            "Cloudinary",
-            "Redis",
-          ],
-          link: "https://moonine.vercel.app/",
-          github: "https://github.com/cup-noodlehS/art-gallery-api",
         },
         {
           imgUrl: "images/campgo.png",
