@@ -3,30 +3,26 @@
     <div class="row justify-content-center">
       <div class="about-content col-12 col-lg-6">
         <div class="d-flex justify-content-end mb-3">
-          <a
-            href="https://github.com/cup-noodlehS"
-            target="_blank"
-            class="home-links btn btn-dark mx-2"
-            ><img src="images/github.svg" alt="" class="pt-1"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/sheldonarthur/"
-            target="_blank"
-            class="home-links btn btn-dark mx-1"
-            ><img src="images/linkedin.svg" alt="" class="pt-1"
-          /></a>
-          <a
-            href="mailto:sheldonarthursagrado@gmail.com"
-            target="_blank"
-            class="home-links btn btn-dark mx-1"
-            ><img src="images/mail.svg" alt="" class="pt-1"
-          /></a>
-          <a
-            href="https://www.instagram.com/n0odlehs/"
-            target="_blank"
-            class="home-links btn btn-dark mx-1"
-            ><img src="images/instagram.svg" alt="" class="pt-1"
-          /></a>
+          <a href="https://github.com/cup-noodlehS" target="_blank">
+            <Button class="button-2">
+              <img src="images/github.svg" alt="" class="pt-1" />
+            </Button>
+          </a>
+          <a href="https://www.linkedin.com/in/sheldonarthur/" target="_blank">
+            <Button class="button-2">
+              <img src="images/linkedin.svg" alt="" class="pt-1" />
+            </Button>
+          </a>
+          <a href="mailto:sheldonarthursagrado@gmail.com" target="_blank">
+            <Button class="button-2">
+              <img src="images/mail.svg" alt="" class="pt-1" />
+            </Button>
+          </a>
+          <a href="https://www.instagram.com/n0odlehs/" target="_blank">
+            <Button class="button-2">
+              <img src="images/instagram.svg" alt="" class="pt-1" />
+            </Button>
+          </a>
         </div>
         <h2>about.me</h2>
         <h5>what I love to do?</h5>
@@ -51,6 +47,10 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import Button from "./Button.vue";
+</script>
 
 <style scoped>
 #about {

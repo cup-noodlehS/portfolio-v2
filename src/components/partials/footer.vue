@@ -3,7 +3,7 @@
     <div class="d-flex flex-column align-items-center">
       <h5>Designed and Developed by Sheldon Arthur Sagrado</h5>
       <p class="muted">sheldonarthursagrado@gmail.com</p>
-      <div class="links d-flex gap-2">
+      <div class="links d-flex">
         <a href="https://github.com/cup-noodlehS" target="_blank">
           <Button class="button-2">
             <img src="images/github.svg" alt="" class="pt-1" />
