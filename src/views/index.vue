@@ -5,9 +5,8 @@
     </div>
   </header>
   <main class="container">
-    <Features />
-    <hr />
     <Experience />
+    <Features />
     <hr />
     <TechStack />
     <!-- <hr />
