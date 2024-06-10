@@ -209,6 +209,11 @@ h4 {
 
 .featured-img {
   height: 100%;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .badge1 {
