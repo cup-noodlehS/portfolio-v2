@@ -110,7 +110,7 @@ const experience = [
     duration: elapsedMonthsAndYears(2, 2024),
     positions: [
       {
-        title: "Fullstack Web Developer",
+        title: "Fullstack Web Developer (Freelance)",
         date: "Febuary 2024 - Present",
         duration: elapsedMonthsAndYears(2, 2024),
         skills: ["Next.js", "Django", "Tailwind", "Zustand", "Figma"],
