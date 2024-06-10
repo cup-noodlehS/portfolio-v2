@@ -157,16 +157,16 @@ export default {
           link: "https://vast-rose-drill-boot.cyclic.app/",
           github: "https://github.com/cup-noodlehS/CampGo.git",
         },
-        {
-          imgUrl: "images/cmscblog.png",
-          title: "CMSC-21 Blog",
-          subtitle: "Blog about our CMSC-21 course in UP Cebu",
-          description:
-            "We are Computer Science students from the University of the Philippines Cebu, and we've whipped up this cool blog as part of our coursework",
-          skills: ["EJS", "Node.js", "Express.js"],
-          link: "https://cmsc21-blogs.vercel.app/",
-          github: "https://github.com/cup-noodlehS/CMSC21Blogs.git",
-        },
+        // {
+        //   imgUrl: "images/cmscblog.png",
+        //   title: "CMSC-21 Blog",
+        //   subtitle: "Blog about our CMSC-21 course in UP Cebu",
+        //   description:
+        //     "We are Computer Science students from the University of the Philippines Cebu, and we've whipped up this cool blog as part of our coursework",
+        //   skills: ["EJS", "Node.js", "Express.js"],
+        //   link: "https://cmsc21-blogs.vercel.app/",
+        //   github: "https://github.com/cup-noodlehS/CMSC21Blogs.git",
+        // },
       ],
     };
   },
