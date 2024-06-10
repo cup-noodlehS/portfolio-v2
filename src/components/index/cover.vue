@@ -70,7 +70,7 @@ const animateRadius = async () => {
 };
 
 onMounted(() => {
-  animateRadius();
+  // animateRadius();
 });
 </script>
 
