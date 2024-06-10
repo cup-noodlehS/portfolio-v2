@@ -28,12 +28,11 @@
         <h5>what I love to do?</h5>
         <p>
           I am Sheldon, a computer science student in the University of the
-          Philippines Cebu. <br /><br />
+          Philippines Cebu, and a Full-stack developer as well!<br /><br />
           I am eager to apply my technical skills and passion for
           problem-solving to help develop innovative software solutions and
-          enhance the user experience. I am also committed to continuing my
-          professional growth and staying up-to-date with the latest industry
-          trends and technologies.
+          enhance the user experience. I am also aspiring to build or contribute
+          to a startup, so don't hesitate to hit me up if you want to collab!
         </p>
       </div>
       <div class="about-pics col-12 col-lg-6">
