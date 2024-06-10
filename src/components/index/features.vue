@@ -200,7 +200,7 @@ h4 {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  border-radius: 3%;
+  border-radius: 10px;
   box-shadow: rgba(253, 227, 0, 0.4) -5px 5px, rgba(194, 185, 7, 0.3) -10px 10px,
     rgba(255, 243, 6, 0.2) -15px 15px, rgba(194, 191, 4, 0.1) -20px 20px,
     rgba(251, 255, 0, 0.05) -25px 25px;
