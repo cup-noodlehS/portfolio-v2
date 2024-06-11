@@ -21,7 +21,10 @@
           <a class="nav-link" href="#featured">projects</a>
           <a class="nav-link" href="#experience">experiences</a>
           <a class="nav-link" href="#about">about</a>
-          <a class="nav-link" href="images/resume.pdf" target="_blank"
+          <a
+            class="nav-link"
+            href="https://docs.google.com/document/d/1S6GlI8iNzV1x96EFbUg3G5K0j2JufXCh2ZP0D4HsCnk/edit?usp=sharing"
+            target="_blank"
             >resume</a
           >
         </div>
