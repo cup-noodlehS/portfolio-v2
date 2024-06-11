@@ -25,7 +25,7 @@
             </span>
             <div class="my-3">
               <div v-for="skill in project.skills" key="skill" class="badge1">
-                <div>{{ skill }}</div>
+                <div class="no-highlight">{{ skill }}</div>
               </div>
             </div>
             <div class="d-flex gap-2 justify-content-start">
@@ -262,5 +262,11 @@ h4 {
 .project-description {
   white-space: pre-line;
   font-size: 1.1rem;
+}
+.no-highlight {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 </style>
