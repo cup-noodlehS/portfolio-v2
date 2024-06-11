@@ -76,7 +76,7 @@ export default {
       projects: [
         {
           imgUrl: "images/gallery.png",
-          title: "Moonine Gallery",
+          title: "MooNine Gallery",
           subtitle: "An Art Auction Website",
           description:
             "A website that allows users to view and bid on art pieces. It also allows artists to upload their art pieces for auction.",
