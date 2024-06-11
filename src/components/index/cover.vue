@@ -62,7 +62,7 @@ const animateRadius = async () => {
       const [r1, r2, r3, r4, r5, r6, r7, r8] = meImgRadius.value;
       meImg.value.style.borderRadius = `${r1}% ${r2}% ${r3}% ${r4}% / ${r5}% ${r6}% ${r7}% ${r8}%`;
 
-      await wait(100);
+      await wait(60);
     }
   } catch (error) {
     console.error("Error in animation:", error);
