@@ -79,8 +79,8 @@ const experience = [
     positions: [
       {
         title: "Full Stack Developer",
-        date: "October 2023 - Present",
-        duration: elapsedMonthsAndYears(10, 2023),
+        date: "October 2023 - May 2024",
+        duration: elapsedMonthsAndYears(10, 2023, 5, 2024),
         skills: ["Django", "Vue.js", "Python"],
       },
       {
