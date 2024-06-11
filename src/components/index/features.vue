@@ -85,6 +85,8 @@ export default {
             "DRF",
             "Next.js",
             "TailwindCSS",
+            "Material UI",
+            "Daisy UI",
             "SCSS",
             "PostgreSQL",
             "Cloudinary",
