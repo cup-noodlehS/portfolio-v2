@@ -113,7 +113,7 @@ const experience = [
         title: "Fullstack Web Developer (Freelance)",
         date: "Febuary 2024 - Present",
         duration: elapsedMonthsAndYears(2, 2024),
-        skills: ["Next.js", "Django", "Tailwind", "Zustand", "Figma"],
+        skills: ["Next.js", "Django", "DRF", "Tailwind", "Zustand", "Figma"],
       },
     ],
   },
