@@ -50,7 +50,7 @@ const direction = ref([true, true, true, true, true, true, true, true]);
 
 const animateRadius = async () => {
   try {
-    while (window.innerWidth >= 992) {
+    while (true) {
       for (let i = 0; i < meImgRadius.value.length; i++) {
         if (meImgRadius.value[i] >= 100 || meImgRadius.value[i] <= 20) {
           direction.value[i] = !direction.value[i];
