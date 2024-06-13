@@ -1,17 +1,20 @@
 <template>
-  <div id="home" class="home row justify-content-center align-items-center">
-    <div class="col-6 d-none d-lg-block">
-      <img ref="meImg" src="images/gwapo.png" alt="" id="meImg" class="" />
-    </div>
-    <div class="home-content col-12 col-lg-6">
+  <div
+    id="home"
+    class="home d-flex justify-content-center align-items-center flex-wrap gap-3"
+  >
+    <img ref="meImg" src="images/gwapo.png" alt="" id="meImg" class="p-0" />
+    <div class="home-content">
       <div class="text">
         <h4 class="mb-3">Hello, they call me "Don";</h4>
         <h5>
           I am a <span class="yellow">full-stack developer</span> from the
-          <span class="yellow">Philippines</span> who loves to create ;&#41;
+          <span class="yellow">Philippines</span> who loves to create;&#41;
         </h5>
       </div>
-      <div class="links mt-5 d-flex gap-2 flex-wrap justify-content-start">
+      <div
+        class="links mt-5 d-flex gap-2 flex-wrap justify-content-center justify-content-md-start"
+      >
         <a href="#featured">
           <Button class="button-1">Projects</Button>
         </a>
@@ -77,13 +80,17 @@ onMounted(() => {
 <style scoped>
 .home {
   min-height: 100lvh;
+  padding-top: 90px;
 }
 
 #meImg {
-  max-height: calc(100vh - 100px);
+  max-width: 50%;
   border-radius: 38% 62% 61% 39% / 28% 43% 57% 72%;
   border: solid 3px #f1f178;
   box-shadow: 0 0 20px 5px #f1f178;
+}
+.home-content {
+  width: 50%;
 }
 
 h5 {
@@ -116,8 +123,16 @@ h5 {
 }
 
 @media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
   #meImg {
-    display: none;
+    width: 60%;
+    /* height: 100%; */
+  }
+
+  .home-content {
+    width: 100%;
   }
 
   h4 {
