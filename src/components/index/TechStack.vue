@@ -1,7 +1,7 @@
 <template>
   <div class="techstack">
     <h1 class="fw-semibold mb-3">TechStack.order_by('proficiency')</h1>
-    <div class="highlights d-flex gap-4 justify-content-center mb-4">
+    <div class="highlights d-flex flex-wrap gap-4 justify-content-center mb-4">
       <a
         v-for="highlight in highlights"
         :key="highlight.name"
