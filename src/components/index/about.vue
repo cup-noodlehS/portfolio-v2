@@ -2,7 +2,7 @@
   <div class="d-flex container-fluid my-5" id="about">
     <div class="row justify-content-center">
       <div class="about-content col-12 col-lg-6">
-        <div class="d-flex justify-content-end mb-3">
+        <div class="d-flex mb-3">
           <a href="https://github.com/cup-noodlehS" target="_blank">
             <Button class="button-2">
               <img src="images/github.svg" alt="" class="pt-1" />
