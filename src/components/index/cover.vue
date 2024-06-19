@@ -15,8 +15,11 @@
       <div
         class="links mt-5 d-flex gap-2 flex-wrap justify-content-center justify-content-md-start"
       >
-        <a href="#featured">
-          <Button class="button-1">Projects</Button>
+        <a
+          href="https://docs.google.com/document/d/1S6GlI8iNzV1x96EFbUg3G5K0j2JufXCh2ZP0D4HsCnk/edit?usp=sharing"
+          target="_blank"
+        >
+          <Button class="button-1">Resume</Button>
         </a>
         <div class="d-flex gap-2">
           <a href="https://github.com/cup-noodlehS" target="_blank">
