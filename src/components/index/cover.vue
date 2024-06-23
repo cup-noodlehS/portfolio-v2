@@ -51,6 +51,13 @@ const meImg = ref(null);
 const meImgRadius = ref([38, 62, 61, 39, 28, 43, 57, 72]);
 const direction = ref([true, true, true, true, true, true, true, true]);
 
+const x = ref(0);
+const testFunction = () => {
+  console.log("testFunction", x.value);
+  x.value = 5;
+  console.log("testFunction", x.value);
+}
+
 const animateRadius = async () => {
   try {
     while (true) {
@@ -77,6 +84,7 @@ const animateRadius = async () => {
 
 onMounted(() => {
   animateRadius();
+  testFunction();
 });
 </script>
 
@@ -91,6 +99,7 @@ onMounted(() => {
   border-radius: 38% 62% 61% 39% / 28% 43% 57% 72%;
   border: solid 3px #f1f178;
   box-shadow: 0 0 20px 5px #f1f178;
+  -webkit-user-drag: none;
 }
 .home-content {
   width: 50%;
