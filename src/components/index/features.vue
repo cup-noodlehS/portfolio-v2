@@ -9,13 +9,14 @@
         class="featured-section"
       >
         <div class="row">
-          <div
-            v-if="index % 2 == 0 || screenWidth <= 992"
-            class="img-cont col-12 col-lg-6"
-          >
-            <a :href="project.link" target="_blank">
-              <img :src="project.imgUrl" class="featured-img" alt="" />
-            </a>
+          <div v-if="index % 2 == 0 || screenWidth <= 992" class="col-12 col-lg-6">
+            <div
+              class="img-cont"
+            >
+              <a :href="project.link" target="_blank">
+                <img :src="project.imgUrl" class="featured-img" alt="" />
+              </a>
+            </div>
           </div>
           <div class="featured-description col-12 col-lg-6">
             <h1>{{ project.title }}</h1>
@@ -39,13 +40,14 @@
               </a>
             </div>
           </div>
-          <div
-            v-if="index % 2 != 0 && screenWidth > 992"
-            class="img-cont col-12 col-lg-6"
-          >
-            <a :href="project.link" target="_blank">
-              <img :src="project.imgUrl" class="featured-img" alt="" />
-            </a>
+          <div v-if="index % 2 != 0 && screenWidth > 992" class="col-12 col-lg-6">
+            <div
+              class="img-cont"
+            >
+              <a :href="project.link" target="_blank">
+                <img :src="project.imgUrl" class="featured-img" alt="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
