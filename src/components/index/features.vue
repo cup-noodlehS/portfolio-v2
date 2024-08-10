@@ -77,6 +77,16 @@ export default {
       screenWidth: 0,
       projects: [
         {
+          imgUrl: "images/wrytopia.png",
+          title: "wrytopia",
+          subtitle: "Business Website",
+          description:
+            "Wrytopia is a reliable third-party agent committed to assisting global English writers by providing high-quality writing services that pave the way for your writing carer.",
+          skills: ["Vue.js", "BootstrapCSS", "SCSS", "Lottie"],
+          link: "https://wrytopia.vercel.app/",
+          github: "https://github.com/cup-noodlehS/CampGo.git",
+        },
+        {
           imgUrl: "images/gallery.png",
           title: "MooNine Gallery",
           subtitle: "An Art Auction Website",
@@ -131,16 +141,6 @@ export default {
           ],
           link: "https://beaconph.site",
           github: "https://github.com/innovustech/beacon",
-        },
-        {
-          imgUrl: "images/wrytopia.png",
-          title: "wrytopia",
-          subtitle: "Business Website",
-          description:
-            "Wrytopia is a reliable third-party agent committed to assisting global English writers by providing high-quality writing services that pave the way for your writing carer.",
-          skills: ["Vue.js", "BootstrapCSS", "SCSS", "Lottie"],
-          link: "https://wrytopia.vercel.app/",
-          github: "https://github.com/cup-noodlehS/CampGo.git",
         },
         {
           imgUrl: "images/campgo.png",
