@@ -30,7 +30,39 @@
 
 <script setup>
 const highlights = [
-  {
+  // {
+  //   name: "Python",
+  //   url: "images/techstack/python.svg",
+  //   link: "https://www.python.org/",
+  // },
+  // {
+  //   name: "JavaScript",
+  //   url: "images/techstack/js.svg",
+  //   link: "https://www.javascript.com/",
+  // },
+  // {
+  //   name: "Vue.js",
+  //   url: "images/techstack/vue.svg",
+  //   link: "https://vuejs.org/",
+  // },
+  // {
+  //   name: "Django",
+  //   url: "images/techstack/django.svg",
+  //   link: "https://www.djangoproject.com/",
+  // },
+  // {
+  //   name: "Next.js",
+  //   url: "images/techstack/nextjs.svg",
+  //   link: "https://nextjs.org/",
+  // },
+  // {
+  //   name: "Tailwind",
+  //   url: "images/techstack/tailwindcss.svg",
+  //   link: "https://tailwindcss.com/",
+  // },
+];
+const items = [
+{
     name: "Python",
     url: "images/techstack/python.svg",
     link: "https://www.python.org/",
@@ -60,8 +92,6 @@ const highlights = [
     url: "images/techstack/tailwindcss.svg",
     link: "https://tailwindcss.com/",
   },
-];
-const items = [
   {
     name: "React.js",
     url: "images/techstack/react.svg",
@@ -136,7 +166,7 @@ const items = [
 .items {
   margin-bottom: 50px;
   .item {
-    border: solid 1px rgba(255, 255, 255, 0.493);
+    border: solid 1px rgb(247, 247, 193);
     padding: 5px 10px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.034);
