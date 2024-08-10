@@ -79,8 +79,8 @@ const experience = [
     positions: [
       {
         title: "Full Stack Developer",
-        date: "October 2023 - May 2024",
-        duration: elapsedMonthsAndYears(10, 2023, 5, 2024),
+        date: "October 2023 - Present",
+        duration: elapsedMonthsAndYears(10, 2023),
         skills: ["Django", "Vue.js", "Python"],
       },
       {
@@ -105,8 +105,8 @@ const experience = [
     ],
   },
   {
-    company: "Innovustech",
-    link: "https://github.com/innovustech/",
+    company: "Unravyl",
+    link: "https://www.linkedin.com/company/unravyl",
     duration: elapsedMonthsAndYears(2, 2024),
     positions: [
       {
