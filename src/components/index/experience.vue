@@ -107,12 +107,12 @@ const experience = [
   {
     company: "Unravyl",
     link: "https://www.linkedin.com/company/unravyl",
-    duration: elapsedMonthsAndYears(2, 2024),
+    duration: elapsedMonthsAndYears(6, 2024),
     positions: [
       {
-        title: "Fullstack Web Developer (Freelance)",
-        date: "Febuary 2024 - Present",
-        duration: elapsedMonthsAndYears(2, 2024),
+        title: "Founder & Full Stack Developer",
+        date: "June 2024 - Present",
+        duration: elapsedMonthsAndYears(6, 2024),
         skills: ["Next.js", "Django", "DRF", "Tailwind", "Zustand", "Figma"],
       },
     ],
