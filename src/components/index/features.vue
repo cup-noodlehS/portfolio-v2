@@ -53,13 +53,12 @@
       </div>
 
       <div class="d-flex align-items-center gap-3 fs-5 justify-content-center">
-        View more on my
         <a
           href="https://github.com/cup-noodlehS"
           class="d-flex align-items-center gap-2 text-white"
+          target="_blank"
         >
-          github
-          <img src="images/github.svg" />
+          View more
         </a>
       </div>
     </div>
