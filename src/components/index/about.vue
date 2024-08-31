@@ -27,8 +27,7 @@
         <h2>about.me</h2>
         <h5>what I love to do?</h5>
         <p>
-          I am Sheldon, a computer science student in the University of the
-          Philippines Cebu, and a Full-stack developer as well!<br /><br />
+          I am Sheldon, a Full-stack developer!
           I am eager to apply my technical skills and passion for
           problem-solving to help develop innovative software solutions and
           enhance the user experience. I am also aspiring to build or contribute
