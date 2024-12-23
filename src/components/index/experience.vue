@@ -101,7 +101,7 @@ const experience = [
         duration: elapsedMonthsAndYears(9, 2024),
         positions: [
             {
-                title: "Software Engineer",
+                title: "Lead Software Engineer",
                 date: "September 2024 - Present",
                 duration: elapsedMonthsAndYears(9, 2024),
                 skills: [
