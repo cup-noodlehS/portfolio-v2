@@ -2,7 +2,7 @@
     <div id="experience" class="my-5">
         <h1>experience(self):</h1>
         <h4 class="mb-5">_what i have done?</h4>
-        <div class="d-flex flex-wrap">
+        <div class="d-flex flex-column align-items-center">
             <div
                 v-for="(company, index) in experience"
                 :key="index"
@@ -96,6 +96,19 @@ function elapsedMonthsAndYears(
 
 const experience = [
     {
+        company: "Bitwork Solutions",
+        link: "https://bitworksolutions.com",
+        duration: elapsedMonthsAndYears(1, 2025),
+        positions: [
+            {
+                title: "Software Engineer",
+                date: "January 2025 - Present",
+                duration: elapsedMonthsAndYears(1, 2025),
+                skills: ["Next.js", "FastAPI", "Tailwind", "React", "TypeScript", "Python"],
+            },
+        ],
+    },
+    {
         company: "Tranches",
         link: "https://www.linkedin.com/company/tranchesmarketing/",
         duration: elapsedMonthsAndYears(9, 2024),
@@ -121,12 +134,12 @@ const experience = [
     {
         company: "BPOSeats",
         link: "https://www.linkedin.com/company/bposeats/mycompany/",
-        duration: elapsedMonthsAndYears(9, 2023),
+        duration: elapsedMonthsAndYears(9, 2023, 1, 2025),
         positions: [
             {
                 title: "Full Stack Developer",
-                date: "October 2023 - Present",
-                duration: elapsedMonthsAndYears(10, 2023),
+                date: "October 2023 - January 2025",
+                duration: elapsedMonthsAndYears(10, 2023, 1, 2025),
                 skills: ["Django", "Vue.js", "Python"],
             },
             {
@@ -147,26 +160,6 @@ const experience = [
                 date: "August 2023 - Febuary 2024",
                 duration: elapsedMonthsAndYears(8, 2023, 2, 2024),
                 skills: ["Vue.js", "SCSS", "Bootstrap", "Lottie"],
-            },
-        ],
-    },
-    {
-        company: "Unravyl",
-        link: "https://www.linkedin.com/company/unravyl",
-        duration: elapsedMonthsAndYears(6, 2024),
-        positions: [
-            {
-                title: "Founder & Full Stack Developer",
-                date: "June 2024 - Present",
-                duration: elapsedMonthsAndYears(6, 2024),
-                skills: [
-                    "Next.js",
-                    "Django",
-                    "DRF",
-                    "Tailwind",
-                    "Zustand",
-                    "Figma",
-                ],
             },
         ],
     },
