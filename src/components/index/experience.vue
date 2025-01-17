@@ -1,5 +1,5 @@
 <template>
-    <div id="experience" class="my-5">
+    <div id="experience" class="">
         <h1>experience(self):</h1>
         <h4 class="mb-5">_what i have done?</h4>
         <div class="d-flex flex-column align-items-center">
@@ -79,16 +79,16 @@ function elapsedMonthsAndYears(
     }
 
     // Build the result string
-    let result = "";
+    let result = '';
     if (elapsedYears > 0) {
-        result += `${elapsedYears} yr${elapsedYears > 1 ? "s" : ""}`;
+        result += `${elapsedYears} yr${elapsedYears > 1 ? 's' : ''}`;
         if (elapsedMonths > 0) {
-            result += ` ${elapsedMonths} mo${elapsedMonths > 1 ? "s" : ""}`;
+            result += ` ${elapsedMonths} mo${elapsedMonths > 1 ? 's' : ''}`;
         }
     } else if (elapsedMonths > 0) {
-        result += `${elapsedMonths} mo${elapsedMonths > 1 ? "s" : ""}`;
+        result += `${elapsedMonths} mo${elapsedMonths > 1 ? 's' : ''}`;
     } else {
-        result = "0 mos"; // When the start date is the same as the end date
+        result = '0 mos'; // When the start date is the same as the end date
     }
 
     return result;
@@ -96,70 +96,77 @@ function elapsedMonthsAndYears(
 
 const experience = [
     {
-        company: "Bitwork Solutions",
-        link: "https://bitworksolutions.com",
+        company: 'Bitwork Solutions',
+        link: 'https://bitworksolutions.com',
         duration: elapsedMonthsAndYears(1, 2025),
         positions: [
             {
-                title: "Software Engineer",
-                date: "January 2025 - Present",
+                title: 'Software Engineer',
+                date: 'January 2025 - Present',
                 duration: elapsedMonthsAndYears(1, 2025),
-                skills: ["Next.js", "FastAPI", "Tailwind", "React", "TypeScript", "Python"],
-            },
-        ],
-    },
-    {
-        company: "Tranches",
-        link: "https://www.linkedin.com/company/tranchesmarketing/",
-        duration: elapsedMonthsAndYears(9, 2024),
-        positions: [
-            {
-                title: "Lead Software Engineer",
-                date: "September 2024 - Present",
-                duration: elapsedMonthsAndYears(9, 2024),
                 skills: [
-                    "Svelte",
-                    "Django",
-                    "Docker",
-                    "Python",
-                    "Node.js",
-                    "Express.js",
-                    "AWS",
-                    "Docker",
-                    "After Effects",
+                    'Next.js',
+                    'FastAPI',
+                    'Tailwind',
+                    'React',
+                    'TypeScript',
+                    'Python',
                 ],
             },
         ],
     },
     {
-        company: "BPOSeats",
-        link: "https://www.linkedin.com/company/bposeats/mycompany/",
-        duration: elapsedMonthsAndYears(9, 2023, 1, 2025),
+        company: 'Tranches',
+        link: 'https://www.linkedin.com/company/tranchesmarketing/',
+        duration: elapsedMonthsAndYears(9, 2024),
         positions: [
             {
-                title: "Full Stack Developer",
-                date: "October 2023 - January 2025",
-                duration: elapsedMonthsAndYears(10, 2023, 1, 2025),
-                skills: ["Django", "Vue.js", "Python"],
-            },
-            {
-                title: "Full Stack Developer Intern",
-                date: "September 2023",
-                duration: elapsedMonthsAndYears(9, 2023, 10, 2023),
-                skills: ["Django", "Vue.js", "Python", "PostgreSQL", "SCSS"],
+                title: 'Lead Software Engineer',
+                date: 'September 2024 - Present',
+                duration: elapsedMonthsAndYears(9, 2024),
+                skills: [
+                    'Svelte',
+                    'Django',
+                    'Docker',
+                    'Python',
+                    'Node.js',
+                    'Express.js',
+                    'AWS',
+                    'Docker',
+                    'After Effects',
+                ],
             },
         ],
     },
     {
-        company: "Wrytopia",
-        link: "https://wrytopia.vercel.app",
+        company: 'BPOSeats',
+        link: 'https://www.linkedin.com/company/bposeats/mycompany/',
+        duration: elapsedMonthsAndYears(9, 2023, 1, 2025),
+        positions: [
+            {
+                title: 'Full Stack Developer',
+                date: 'October 2023 - January 2025',
+                duration: elapsedMonthsAndYears(10, 2023, 1, 2025),
+                skills: ['Django', 'Vue.js', 'Python'],
+            },
+            {
+                title: 'Full Stack Developer Intern',
+                date: 'September 2023',
+                duration: elapsedMonthsAndYears(9, 2023, 10, 2023),
+                skills: ['Django', 'Vue.js', 'Python', 'PostgreSQL', 'SCSS'],
+            },
+        ],
+    },
+    {
+        company: 'Wrytopia',
+        link: 'https://wrytopia.vercel.app',
         duration: elapsedMonthsAndYears(8, 2023, 2, 2024),
         positions: [
             {
-                title: "Lead Web Developer",
-                date: "August 2023 - Febuary 2024",
+                title: 'Lead Web Developer',
+                date: 'August 2023 - Febuary 2024',
                 duration: elapsedMonthsAndYears(8, 2023, 2, 2024),
-                skills: ["Vue.js", "SCSS", "Bootstrap", "Lottie"],
+                skills: ['Vue.js', 'SCSS', 'Bootstrap', 'Lottie'],
             },
         ],
     },
