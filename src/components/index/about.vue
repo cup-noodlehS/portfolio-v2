@@ -27,11 +27,12 @@
         <h2>about.me</h2>
         <h5>what I love to do?</h5>
         <p>
-          I am Sheldon, a Full-stack developer!
-          I am eager to apply my technical skills and passion for
-          problem-solving to help develop innovative software solutions and
-          enhance the user experience. I am also aspiring to build or contribute
-          to a startup, so don't hesitate to hit me up if you want to collab!
+          I am Sheldon, a Software Engineer with expertise in full-stack development. 
+          Currently leading development at Tranches while also working as a Software Engineer at Bitwork Solutions. 
+          I specialize in modern web technologies including Next.js, FastAPI, Django, and Svelte, 
+          with a strong focus on building scalable applications and video automation pipelines. 
+          I'm passionate about technical leadership and creating innovative solutions that deliver real business value. 
+          Always open to exciting collaborations and new opportunities!
         </p>
       </div>
       <div class="about-pics col-12 col-lg-6">

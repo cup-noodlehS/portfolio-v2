@@ -1,29 +1,19 @@
 <template>
   <div class="techstack">
     <h1 class="fw-semibold mb-3">TechStack.order_by('proficiency')</h1>
-    <div class="highlights d-flex flex-wrap gap-4 justify-content-center mb-4">
-      <a
-        v-for="highlight in highlights"
-        :key="highlight.name"
-        class="highlight text-decoration-none"
-        :href="highlight.link"
-        target="_blank"
-      >
-        <i :class="highlight.icon" class="mdi tech-icon"></i>
-        <p class="m-0 fs-5 text-white">{{ highlight.name }}</p>
-      </a>
-    </div>
-    <div class="d-flex flex-wrap gap-3 justify-content-center items">
-      <a
-        v-for="item in items"
-        :key="item.name"
-        :href="item.link"
-        target="_blank"
-        class="techstack-item d-flex align-items-center gap-2 item"
-      >
-        <i :class="item.icon" class="mdi"></i>
-        <p class="m-0 fs-4">{{ item.name }}</p>
-      </a>
+    <div class="d-flex flex-column gap-3 justify-content-center items">
+      <div class="tech-grid">
+        <a
+          v-for="item in items"
+          :key="item.name"
+          :href="item.link"
+          target="_blank"
+          class="techstack-item d-flex align-items-center gap-2 item"
+        >
+          <i :class="item.icon" class="mdi"></i>
+          <p class="m-0 fs-4">{{ item.name }}</p>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -103,6 +93,11 @@ const items = [
     link: "https://svelte.dev/",
   },
   {
+    name: "FastAPI",
+    icon: "mdi-alpha-f-box",
+    link: "https://fastapi.tiangolo.com/",
+  },
+  {
     name: "Docker",
     icon: "mdi-docker",
     link: "https://www.docker.com/",
@@ -116,11 +111,6 @@ const items = [
     name: "Tailwind",
     icon: "mdi-tailwind",
     link: "https://tailwindcss.com/",
-  },
-  {
-    name: "SASS",
-    icon: "mdi-sass",
-    link: "https://sass-lang.com/",
   },
   {
     name: "Node.js",
@@ -178,6 +168,13 @@ const items = [
 
 .items {
   margin-bottom: 50px;
+  
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .item {
     border: solid 1px rgb(247, 247, 193);
     padding: 5px 10px;
