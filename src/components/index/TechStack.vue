@@ -73,6 +73,11 @@ const items = [
     link: "https://www.javascript.com/",
   },
   {
+    name: "TypeScript",
+    icon: "mdi-language-typescript",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
     name: "Vue.js",
     icon: "mdi-vuejs",
     link: "https://vuejs.org/",
@@ -88,24 +93,34 @@ const items = [
     link: "https://nextjs.org/",
   },
   {
-    name: "Tailwind",
-    icon: "mdi-tailwind",
-    link: "https://tailwindcss.com/",
-  },
-  {
     name: "React.js",
     icon: "mdi-react",
     link: "https://reactjs.org/",
   },
   {
+    name: "Svelte",
+    icon: "mdi-alpha-s-box",
+    link: "https://svelte.dev/",
+  },
+  {
+    name: "Docker",
+    icon: "mdi-docker",
+    link: "https://www.docker.com/",
+  },
+  {
+    name: "AWS",
+    icon: "mdi-aws",
+    link: "https://aws.amazon.com/",
+  },
+  {
+    name: "Tailwind",
+    icon: "mdi-tailwind",
+    link: "https://tailwindcss.com/",
+  },
+  {
     name: "SASS",
     icon: "mdi-sass",
     link: "https://sass-lang.com/",
-  },
-  {
-    name: "OpenAI API",
-    icon: "mdi-robot",
-    link: "https://www.openai.com/",
   },
   {
     name: "Node.js",
