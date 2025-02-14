@@ -11,7 +11,15 @@
           class="techstack-item d-flex align-items-center gap-2 item"
         >
           <i :class="item.icon" class="mdi"></i>
-          <p class="m-0 fs-6">{{ item.name }}</p>
+          <div class="d-flex flex-column gap-1 w-100">
+            <p class="m-0 fs-6">{{ item.name }}</p>
+            <div class="progress">
+              <div 
+                class="progress-bar" 
+                :style="{ width: item.proficiency + '%' }"
+              ></div>
+            </div>
+          </div>
         </a>
       </div>
     </div>
@@ -56,81 +64,97 @@ const items = [
     name: "Python",
     icon: "mdi-language-python",
     link: "https://www.python.org/",
+    proficiency: 100
   },
   {
     name: "JavaScript",
     icon: "mdi-language-javascript",
     link: "https://www.javascript.com/",
+    proficiency: 100
   },
   {
     name: "TypeScript",
     icon: "mdi-language-typescript",
     link: "https://www.typescriptlang.org/",
+    proficiency: 90
   },
   {
     name: "Vue.js",
     icon: "mdi-vuejs",
     link: "https://vuejs.org/",
+    proficiency: 100
   },
   {
     name: "Django",
     icon: "mdi-alpha-d-box",
     link: "https://www.djangoproject.com/",
+    proficiency: 100
   },
   {
     name: "Next.js",
     icon: "mdi-alpha-n-box",
     link: "https://nextjs.org/",
+    proficiency: 60
   },
   {
     name: "React.js",
     icon: "mdi-react",
     link: "https://reactjs.org/",
+    proficiency: 60
   },
   {
     name: "Svelte",
     icon: "mdi-alpha-s-box",
     link: "https://svelte.dev/",
+    proficiency: 80
   },
   {
     name: "FastAPI",
     icon: "mdi-alpha-f-box",
     link: "https://fastapi.tiangolo.com/",
+    proficiency: 80
   },
   {
     name: "Docker",
     icon: "mdi-docker",
     link: "https://www.docker.com/",
+    proficiency: 80
   },
   {
     name: "AWS",
     icon: "mdi-aws",
     link: "https://aws.amazon.com/",
+    proficiency: 80
   },
   {
     name: "Tailwind",
     icon: "mdi-tailwind",
     link: "https://tailwindcss.com/",
+    proficiency: 90
   },
   {
     name: "Node.js",
     icon: "mdi-nodejs",
     link: "https://nodejs.org/",
+    proficiency: 50
   },
   {
     name: "Express.js",
     icon: "mdi-alpha-e-box",
     link: "https://expressjs.com/",
+    proficiency: 50
   },
   {
     name: "PostgreSQL",
     icon: "mdi-database",
     link: "https://www.postgresql.org/",
+    proficiency: 80
   },
   {
     name: "MongoDB",
     icon: "mdi-leaf",
     link: "https://www.mongodb.com/",
+    proficiency: 50
   },
 ];
 </script>
@@ -194,6 +218,20 @@ const items = [
     .mdi {
       font-size: 30px;
     }
+  }
+}
+
+.progress {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+
+  .progress-bar {
+    height: 100%;
+    background-color: rgb(241, 241, 120);
+    transition: width 0.3s ease;
   }
 }
 </style>
