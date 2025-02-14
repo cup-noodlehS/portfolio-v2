@@ -11,7 +11,7 @@
           class="techstack-item d-flex align-items-center gap-2 item"
         >
           <i :class="item.icon" class="mdi"></i>
-          <p class="m-0 fs-4">{{ item.name }}</p>
+          <p class="m-0 fs-6">{{ item.name }}</p>
         </a>
       </div>
     </div>

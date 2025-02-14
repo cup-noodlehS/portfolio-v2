@@ -82,7 +82,7 @@ import Button from "./Button.vue";
 
 .about-pics img {
   width: 40%;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0.5rem;
 }
 
