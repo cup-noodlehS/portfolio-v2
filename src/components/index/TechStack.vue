@@ -9,7 +9,7 @@
         :href="highlight.link"
         target="_blank"
       >
-        <img :src="highlight.url" alt="JavaScript" class="logo" />
+        <i :class="highlight.icon" class="mdi tech-icon"></i>
         <p class="m-0 fs-5 text-white">{{ highlight.name }}</p>
       </a>
     </div>
@@ -21,7 +21,7 @@
         target="_blank"
         class="techstack-item d-flex align-items-center gap-2 item"
       >
-        <img :src="item.url" :alt="item.name" class="logo" />
+        <i :class="item.icon" class="mdi"></i>
         <p class="m-0 fs-4">{{ item.name }}</p>
       </a>
     </div>
@@ -62,69 +62,69 @@ const highlights = [
   // },
 ];
 const items = [
-{
+  {
     name: "Python",
-    url: "images/techstack/python.svg",
+    icon: "mdi-language-python",
     link: "https://www.python.org/",
   },
   {
     name: "JavaScript",
-    url: "images/techstack/js.svg",
+    icon: "mdi-language-javascript",
     link: "https://www.javascript.com/",
   },
   {
     name: "Vue.js",
-    url: "images/techstack/vue.svg",
+    icon: "mdi-vuejs",
     link: "https://vuejs.org/",
   },
   {
     name: "Django",
-    url: "images/techstack/django.svg",
+    icon: "mdi-alpha-d-box",
     link: "https://www.djangoproject.com/",
   },
   {
     name: "Next.js",
-    url: "images/techstack/nextjs.svg",
+    icon: "mdi-alpha-n-box",
     link: "https://nextjs.org/",
   },
   {
     name: "Tailwind",
-    url: "images/techstack/tailwindcss.svg",
+    icon: "mdi-tailwind",
     link: "https://tailwindcss.com/",
   },
   {
     name: "React.js",
-    url: "images/techstack/react.svg",
+    icon: "mdi-react",
     link: "https://reactjs.org/",
   },
   {
     name: "SASS",
-    url: "images/techstack/sass.svg",
+    icon: "mdi-sass",
     link: "https://sass-lang.com/",
   },
   {
     name: "OpenAI API",
-    url: "images/techstack/openai.svg",
+    icon: "mdi-robot",
     link: "https://www.openai.com/",
   },
   {
     name: "Node.js",
-    url: "images/techstack/nodejs.svg",
+    icon: "mdi-nodejs",
     link: "https://nodejs.org/",
   },
   {
     name: "Express.js",
-    url: "images/techstack/express.svg",
+    icon: "mdi-alpha-e-box",
     link: "https://expressjs.com/",
   },
   {
     name: "PostgreSQL",
-    url: "images/techstack/postgresql.svg",
+    icon: "mdi-database",
     link: "https://www.postgresql.org/",
   },
   {
     name: "MongoDB",
-    url: "images/techstack/mongodb.svg",
+    icon: "mdi-leaf",
     link: "https://www.mongodb.com/",
   },
 ];
@@ -155,10 +155,8 @@ const items = [
       box-shadow: -10px 10px 0 rgb(255, 255, 255);
     }
 
-    img {
-      width: 90px;
-      height: 90px;
-      border-radius: 10px;
+    .mdi.tech-icon {
+      font-size: 90px;
     }
   }
 }
@@ -181,9 +179,8 @@ const items = [
       box-shadow: 0 0 7px rgba(248, 255, 151, 0.479);
     }
 
-    .logo {
-      width: 30px;
-      height: 30px;
+    .mdi {
+      font-size: 30px;
     }
   }
 }

@@ -8,19 +8,18 @@
             <div class="text">
                 <h4 class="mb-3">Hello, they call me "Don";</h4>
                 <h5>
-                    I am a <span class="yellow">full-stack developer</span> from
-                    the <span class="yellow">Philippines</span> who loves to
+                    I am a <span class="yellow">full-stack developer</span> who loves to
                     create;&#41;
                 </h5>
             </div>
             <div
-                class="links mt-5 d-flex gap-2 flex-wrap justify-content-center justify-content-md-start"
+                class="links mt-5 d-flex gap-4 flex-wrap justify-content-center justify-content-md-start"
             >
                 <a
                     href="https://docs.google.com/document/d/1S6GlI8iNzV1x96EFbUg3G5K0j2JufXCh2ZP0D4HsCnk/edit?usp=sharing"
                     target="_blank"
                 >
-                    <Button class="button-1">Resume</Button>
+                    <Button class="button-1 rounded-pill">Resume</Button>
                 </a>
                 <div class="d-flex gap-2">
                     <a href="https://github.com/cup-noodlehS" target="_blank">
