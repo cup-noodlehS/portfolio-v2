@@ -7,13 +7,13 @@
     <main class="container">
         <div class="d-flex flex-wrap my-5">
             <div
-                class="flex-grow-1 px-2"
+                class="flex-grow-1 px-4"
                 style="min-width: 300px; flex-basis: 50%"
             >
                 <Experience />
             </div>
             <div
-                class="flex-grow-1 px-2"
+                class="flex-grow-1 px-4"
                 style="min-width: 300px; flex-basis: 50%"
             >
                 <TechStack />
