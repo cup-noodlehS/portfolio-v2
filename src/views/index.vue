@@ -20,7 +20,7 @@
             </div>
         </div>
         <Features />
-        <hr />
+        <!-- <hr /> -->
         <!-- <hr />
     <Projects /> -->
         <hr />
