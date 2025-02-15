@@ -207,8 +207,8 @@ h4 {
 .img-cont {
   aspect-ratio: 16/9;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
+  display: block;
+  position: relative;
   border-radius: 10px;
   box-shadow: rgba(253, 227, 0, 0.4) -5px 5px, rgba(194, 185, 7, 0.3) -10px 10px,
     rgba(255, 243, 6, 0.2) -15px 15px, rgba(194, 191, 4, 0.1) -20px 20px,
@@ -217,8 +217,12 @@ h4 {
 }
 
 .featured-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: all 0.5s ease;
 
   &:hover {
