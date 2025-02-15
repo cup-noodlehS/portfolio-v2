@@ -217,7 +217,8 @@ h4 {
 }
 
 .featured-img {
-  height: 100%;
+  width: 100%;
+  height: auto;
   transition: all 0.5s ease;
 
   &:hover {
