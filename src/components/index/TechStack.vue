@@ -76,43 +76,43 @@ const items = [
     name: "TypeScript",
     icon: "mdi-language-typescript",
     link: "https://www.typescriptlang.org/",
-    proficiency: 90
+    proficiency: 100
   },
   {
     name: "Vue.js",
     icon: "mdi-vuejs",
     link: "https://vuejs.org/",
-    proficiency: 100
+    proficiency: 90
   },
   {
     name: "Django",
     icon: "mdi-alpha-d-box",
     link: "https://www.djangoproject.com/",
-    proficiency: 100
+    proficiency: 90
   },
   {
     name: "Next.js",
     icon: "mdi-alpha-n-box",
     link: "https://nextjs.org/",
-    proficiency: 60
+    proficiency: 70
   },
   {
     name: "React.js",
     icon: "mdi-react",
     link: "https://reactjs.org/",
-    proficiency: 60
+    proficiency: 70
   },
   {
     name: "Svelte",
     icon: "mdi-alpha-s-box",
     link: "https://svelte.dev/",
-    proficiency: 80
+    proficiency: 90
   },
   {
     name: "FastAPI",
     icon: "mdi-alpha-f-box",
     link: "https://fastapi.tiangolo.com/",
-    proficiency: 80
+    proficiency: 60
   },
   {
     name: "Docker",
@@ -130,7 +130,7 @@ const items = [
     name: "Tailwind",
     icon: "mdi-tailwind",
     link: "https://tailwindcss.com/",
-    proficiency: 90
+    proficiency: 100
   },
   {
     name: "Node.js",
@@ -142,7 +142,7 @@ const items = [
     name: "Express.js",
     icon: "mdi-alpha-e-box",
     link: "https://expressjs.com/",
-    proficiency: 50
+    proficiency: 60
   },
   {
     name: "PostgreSQL",
@@ -154,7 +154,7 @@ const items = [
     name: "MongoDB",
     icon: "mdi-leaf",
     link: "https://www.mongodb.com/",
-    proficiency: 50
+    proficiency: 60
   },
 ];
 </script>

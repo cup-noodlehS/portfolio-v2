@@ -25,7 +25,11 @@
               {{ project.description }}
             </span>
             <div class="my-3">
-              <div v-for="skill in project.skills" key="skill" class="badge1">
+              <div 
+                v-for="(skill, index) in project.skills" 
+                :key="skill" 
+                :class="{'badge1': index !== 0, 'badge1-first': index === 0}"
+              >
                 <div class="no-highlight">{{ skill }}</div>
               </div>
             </div>
@@ -58,7 +62,7 @@
           class="d-flex align-items-center gap-2 text-white"
           target="_blank"
         >
-          View more
+          View more on my github
         </a>
       </div>
     </div>
@@ -81,7 +85,7 @@ export default {
           subtitle: "Business Website",
           description:
             "Wrytopia is a reliable third-party agent committed to assisting global English writers by providing high-quality writing services that pave the way for your writing carer.",
-          skills: ["Vue.js", "BootstrapCSS", "SCSS", "Lottie"],
+          skills: ["Frontend web", "Vue.js", "BootstrapCSS", "SCSS", "Lottie"],
           link: "https://wrytopia.vercel.app/",
           github: "https://github.com/cup-noodlehS/CampGo.git",
         },
@@ -92,6 +96,7 @@ export default {
           description:
             "A website that allows users to view and bid on art pieces. It also allows artists to upload their art pieces for auction.",
           skills: [
+            "Full Stack Web",
             "Django",
             "DRF",
             "Next.js",
@@ -101,7 +106,6 @@ export default {
             "SCSS",
             "PostgreSQL",
             "Cloudinary",
-            "Redis",
           ],
           link: "https://moonine.vercel.app/",
           github: "https://github.com/cup-noodlehS/art-gallery-api",
@@ -113,7 +117,8 @@ export default {
           description:
             "A website  for generating Deterministic Finite Automata (DFA) graph from a regex input, and checking the if a DFA accepts a given string. ",
           skills: [
-            "Next.js/React.js",
+            "Frontend Web",
+            "Next.js",
             "Zustand",
             "TailwindCSS",
             "SCSS",
@@ -130,9 +135,10 @@ export default {
           description:
             "A ingenious career guidance application. Seamlessly integrating AI algorithms with user feedback, Beacon crafts tailor-made career roadmaps, empowering individuals to navigate their professional trajectories with confidence and clarity.",
           skills: [
+            "Full Stack Web",
             "OpenAI API",
             "D3.js",
-            "Next.js/React.js",
+            "Next.js",
             "Django",
             "Firebase",
             "TailwindCSS",
@@ -148,6 +154,7 @@ export default {
           description:
             "Its core functionality revolves around offering users an immersive experience, granting them access to a curated collection of campgrounds situated in diverse locations, each accompanied by comprehensive details \n\n (Note: this is not available as of the moment because cyclic.sh is down)",
           skills: [
+            "BackendWeb",
             "EJS",
             "Node.js",
             "Express.js",
@@ -221,6 +228,17 @@ h4 {
 .badge1 {
   display: inline-block;
   background-color: rgb(18, 32, 57);
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.badge1-first {
+  display: inline-block;
+  background-color: rgb(236, 236, 191);
+  color: rgb(18, 32, 57);
   padding: 5px 10px;
   border-radius: 25px;
   font-weight: 600;
