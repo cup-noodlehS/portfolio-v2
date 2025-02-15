@@ -224,12 +224,12 @@ const experience = [
     {
         company: 'BPOSeats',
         link: 'https://www.linkedin.com/company/bposeats/mycompany/',
-        duration: elapsedMonthsAndYears(9, 2023, 1, 2025),
+        duration: elapsedMonthsAndYears(9, 2023, 2, 2025),
         positions: [
             {
                 title: 'Full Stack Developer',
                 date: 'October 2023 - January 2025',
-                duration: elapsedMonthsAndYears(10, 2023, 1, 2025),
+                duration: elapsedMonthsAndYears(10, 2023, 2, 2025),
                 skills: ['Django', 'Vue.js', 'Python'],
             },
             {
