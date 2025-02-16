@@ -37,10 +37,17 @@
       </div>
       <div class="about-pics col-12 col-lg-6">
         <div class="mt-5">
-          <img src="images/aboutpic1.png" alt="" />
-          <img src="images/aboutpic2.jpg" alt="" />
+          <a
+            href="https://www.upcebu.edu.ph/2024/11/18/computer-science-students-win-natl-data-science-comp-promote-sustainable-urban-mobility-with-lakbai/" target="_blank">
+            <img src="images/aboutpic1.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com/UPCSG/posts/-congratulations-to-the-brilliant-minds-behind-the-winning-projects-at-the-recen/905752168005900/" target="_blank">
+            <img src="images/aboutpic2.jpg" alt="" />
+          </a>
           <img src="images/aboutpic3.jpg" alt="" />
-          <img src="images/aboutpic4.jpg" alt="" />
+          <a href="https://www.facebook.com/UPCSG/posts/pfbid02xBayA3PZwx1mCrcbi93b7M6n5yXbGQ1UVNWxx73rPEyYHCuA4e45W9SJ9txua2Bnl" target="_blank">
+            <img src="images/aboutpic4.jpg" alt="" />
+          </a>
         </div>
       </div>
     </div>
@@ -84,6 +91,13 @@ import Button from "./Button.vue";
   width: 40%;
   border-radius: 20px;
   margin: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.about-pics img:hover {
+  transform: scale(1.5);
+  z-index: 1;
+  box-shadow: 0 0 10px rgb(241, 241, 120);
 }
 
 .home-links {

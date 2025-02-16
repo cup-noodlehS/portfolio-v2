@@ -13,7 +13,7 @@
                 </h5>
             </div>
             <div
-                class="links mt-5 d-flex gap-4 flex-wrap justify-content-center justify-content-md-start"
+                class="links mt-5 d-flex gap-2 flex-wrap justify-content-center justify-content-md-start"
             >
                 <a
                     href="https://docs.google.com/document/d/1S6GlI8iNzV1x96EFbUg3G5K0j2JufXCh2ZP0D4HsCnk/edit?usp=sharing"

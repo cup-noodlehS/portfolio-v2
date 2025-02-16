@@ -304,6 +304,19 @@ p {
     cursor: pointer;
     border-radius: 4px;
     transition: all 0.3s ease;
+    animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(241, 241, 120, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(241, 241, 120, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(241, 241, 120, 0);
+    }
 }
 
 .show-more-btn:hover {

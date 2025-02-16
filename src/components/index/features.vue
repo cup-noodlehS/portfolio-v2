@@ -7,6 +7,12 @@
         v-for="(project, index) in projects"
         :key="index"
         class="featured-section"
+        ref="projectItems"
+        :class="{
+          'slide-from-left': visibleProjects[index] && (index % 2 === 0),
+          'slide-from-right': visibleProjects[index] && (index % 2 !== 0),
+          'hidden': !visibleProjects[index]
+        }"
       >
         <div class="row">
           <div v-if="index % 2 == 0 || screenWidth <= 992" class="col-12 col-lg-6">
@@ -87,7 +93,7 @@ export default {
             "Wrytopia is a reliable third-party agent committed to assisting global English writers by providing high-quality writing services that pave the way for your writing carer.",
           skills: ["Frontend web", "Vue.js", "BootstrapCSS", "SCSS", "Lottie"],
           link: "https://wrytopia.vercel.app/",
-          github: "https://github.com/cup-noodlehS/CampGo.git",
+          github: "https://github.com/cup-noodlehS/wrytopia-v2.0",
         },
         {
           imgUrl: "images/gallery.png",
@@ -147,25 +153,25 @@ export default {
           link: "https://beaconph.site",
           github: "https://github.com/innovustech/beacon",
         },
-        {
-          imgUrl: "images/campgo.png",
-          title: "CampGo",
-          subtitle: "Campground Website",
-          description:
-            "Its core functionality revolves around offering users an immersive experience, granting them access to a curated collection of campgrounds situated in diverse locations, each accompanied by comprehensive details \n\n (Note: this is not available as of the moment because cyclic.sh is down)",
-          skills: [
-            "BackendWeb",
-            "EJS",
-            "Node.js",
-            "Express.js",
-            "MongoDB",
-            "Mapbox",
-            "Cloudinary",
-            "BootstrapCSS",
-          ],
-          link: "https://vast-rose-drill-boot.cyclic.app/",
-          github: "https://github.com/cup-noodlehS/CampGo.git",
-        },
+        // {
+        //   imgUrl: "images/campgo.png",
+        //   title: "CampGo",
+        //   subtitle: "Campground Website",
+        //   description:
+        //     "Its core functionality revolves around offering users an immersive experience, granting them access to a curated collection of campgrounds situated in diverse locations, each accompanied by comprehensive details \n\n (Note: this is not available as of the moment because cyclic.sh is down)",
+        //   skills: [
+        //     "BackendWeb",
+        //     "EJS",
+        //     "Node.js",
+        //     "Express.js",
+        //     "MongoDB",
+        //     "Mapbox",
+        //     "Cloudinary",
+        //     "BootstrapCSS",
+        //   ],
+        //   link: "https://vast-rose-drill-boot.cyclic.app/",
+        //   github: "https://github.com/cup-noodlehS/CampGo.git",
+        // },
         // {
         //   imgUrl: "images/cmscblog.png",
         //   title: "CMSC-21 Blog",
@@ -177,11 +183,35 @@ export default {
         //   github: "https://github.com/cup-noodlehS/CMSC21Blogs.git",
         // },
       ],
+      visibleProjects: [],
     };
   },
   created() {
     this.screenWidth = window.innerWidth;
     window.addEventListener("resize", this.handleResize);
+    this.visibleProjects = new Array(this.projects.length).fill(false);
+  },
+  mounted() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = this.$refs.projectItems.findIndex(
+            (item) => item === entry.target
+          );
+          if (index !== -1) {
+            this.visibleProjects[index] = entry.isIntersecting;
+          }
+        });
+      },
+      { 
+        threshold: 0.3,
+        rootMargin: '-100px 0px'
+      }
+    );
+
+    this.$refs.projectItems.forEach((item) => {
+      observer.observe(item);
+    });
   },
   methods: {
     handleResize() {
@@ -270,6 +300,7 @@ h4 {
 
 .featured-section {
   margin-bottom: 120px !important;
+  will-change: transform, opacity;
 }
 
 .home-links {
@@ -294,5 +325,28 @@ h4 {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease;
+}
+
+.slide-from-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.8s ease;
+}
+
+.slide-from-right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.8s ease;
+}
+
+.hidden:nth-child(even) {
+  transform: translateX(100px);
+  transition: all 0.8s ease;
 }
 </style>

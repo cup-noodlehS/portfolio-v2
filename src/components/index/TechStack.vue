@@ -16,7 +16,8 @@
             <div class="progress">
               <div 
                 class="progress-bar" 
-                :style="{ width: item.proficiency + '%' }"
+                :style="{ width: isVisible ? item.proficiency + '%' : '0%' }"
+                ref="progressBars"
               ></div>
             </div>
           </div>
@@ -27,6 +28,8 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
+
 const highlights = [
   // {
   //   name: "Python",
@@ -157,6 +160,25 @@ const items = [
     proficiency: 60
   },
 ];
+
+const isVisible = ref(false);
+const progressBars = ref([]);
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        isVisible.value = entry.isIntersecting;
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  // Observe the first progress bar (since they're all in the same container)
+  if (progressBars.value[0]) {
+    observer.observe(progressBars.value[0]);
+  }
+});
 </script>
 
 <style scoped lang="scss">
@@ -231,7 +253,8 @@ const items = [
   .progress-bar {
     height: 100%;
     background-color: rgb(241, 241, 120);
-    transition: width 0.3s ease;
+    transition: width 1s ease; // Increased duration for more noticeable effect
+    width: 0%; // Start at 0
   }
 }
 </style>
