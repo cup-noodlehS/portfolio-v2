@@ -1,5 +1,5 @@
 <template>
-  <div id="featured" class="my-5 container">
+  <div id="featured" class="my-5 container overflow-x-hidden">
     <h1 class="">_featuredProjects</h1>
     <hr />
     <div class="mt-5 container">
