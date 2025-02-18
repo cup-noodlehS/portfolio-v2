@@ -225,7 +225,7 @@ onMounted(() => {
     border: solid 1px rgb(247, 247, 193);
     padding: 5px 10px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.034);
+    background-color: rgb(12, 10, 27);
     box-shadow: 0 0 7px rgba(248, 255, 151, 0.479);
     cursor: pointer;
     text-decoration: none;

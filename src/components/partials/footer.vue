@@ -1,7 +1,7 @@
 <template>
   <footer class="d-flex justify-content-center py-5">
     <div class="d-flex flex-column align-items-center">
-      <h5>Designed and Developed by Sheldon Arthur Sagrado</h5>
+      <h5 class="text-center">Designed and Developed by Sheldon Arthur Sagrado</h5>
       <p class="muted">sheldonarthursagrado@gmail.com</p>
       <div class="links d-flex">
         <a href="https://github.com/cup-noodlehS" target="_blank">
