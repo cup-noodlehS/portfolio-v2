@@ -141,7 +141,7 @@ function elapsedMonthsAndYears(
 
     // Calculate elapsed years and months
     let elapsedYears = endYear - startYear;
-    let elapsedMonths = endMonth - startMonth;
+    let elapsedMonths = endMonth - startMonth + 1;
 
     // Adjust for negative months
     if (elapsedMonths < 0) {
