@@ -179,7 +179,7 @@ const experience = [
                     'Next.js',
                     'FastAPI',
                     'Tailwind',
-                    'React',
+                    'React Native',
                     'TypeScript',
                     'Python',
                 ],
@@ -194,12 +194,24 @@ const experience = [
     {
         company: 'Tranches',
         link: 'https://www.linkedin.com/company/tranchesmarketing/',
-        duration: elapsedMonthsAndYears(9, 2024),
+        duration: elapsedMonthsAndYears(9, 2024, 2, 2025),
         positions: [
             {
+                title: 'Software Automation Engineer',
+                date: 'January 2025 - Febuary 2025',
+                duration: elapsedMonthsAndYears(1, 2025, 2, 2025),
+                skills: [
+                    'Project Management',
+                    'Airtable',
+                    'Make.com',
+                    'Frame.io',
+                    'Javascript',
+                ],
+            },
+            {
                 title: 'Lead Software Engineer',
-                date: 'September 2024 - Present',
-                duration: elapsedMonthsAndYears(9, 2024),
+                date: 'September 2024 - January 2025',
+                duration: elapsedMonthsAndYears(9, 2024, 1, 2025),
                 skills: [
                     'Svelte',
                     'Django',
@@ -214,10 +226,12 @@ const experience = [
             },
         ],
         description: [
+            'Designed and implemented automation solutions for content creation project management using Airtable, Make.com, and Frame.io, improving workflow efficiency and reducing manual workload.',
+            'Developed and optimized automated workflows to streamline asset management, approval processes, and content delivery.',
+            '',
             'Lead development of video automation pipelines using Nexrender for After Effects editing and rendering.',
             'Serve as the primary technical liaison with clients, managing project requirements and product delivery.',
             'Develop and maintain web applications using Svelte & ShadcnUI for frontend, and Django and Node.js  for backend services.',
-            'Collaborate with stakeholders on product planning, contributing to feature design and roadmap strategy.',
             'Oversee AWS deployment and cloud infrastructure management to ensure reliable and scalable product delivery.',
         ],
     },
